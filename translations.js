@@ -27,8 +27,8 @@ window.TRANSLATIONS = {
       badge: "✨ Para Creadores de Contenido, Community Managers y Agencias",
       title_part1: "Crea, Personaliza y Programa tus",
       title_gradient: "Redes Sociales con IA",
-      title_part2: "y Control Total",
-      subtitle: "La herramienta que potencia tu creatividad sin quitarte el control. La IA genera ideas y borradores adaptados a tu marca, tú revisas y apruebas cada detalle, y HubSocial se encarga de programar y publicar en Facebook, Instagram, LinkedIn, Threads, X y Reddit desde tu teléfono Android.",
+      title_part2: "en Segundos",
+      subtitle: "¿Cansado de perder horas pensando qué publicar? SocialHub redacta tus publicaciones con IA con el estilo de tu marca y las publica automáticamente en Facebook, Instagram, LinkedIn, Threads, X y Reddit desde una sola app en tu teléfono Android.",
       cta_primary: "Descargar para Android",
       cta_secondary: "Ver Cómo Funciona (3 Pasos)",
       floating_tag_agency: "Para Ti o Tus Clientes",
@@ -56,24 +56,24 @@ window.TRANSLATIONS = {
       step2_desc: "En segundos obtienes propuestas personalizadas con hashtags y formato ideal: profesional para LinkedIn, visual para Instagram y directo para X.",
       step2_tip: "✍️ Tú tienes la última palabra: edita el texto, cambia imágenes o afina detalles.",
       step3_badge: "3",
-      step3_title: "Aprueba y programa en un toque",
-      step3_desc: "Deja tus publicaciones aprobadas en el calendario. HubSocial se encarga de enviarlas a cada red a la hora programada sin tener que copiar y pegar a mano.",
-      step3_tip: "🚀 Despacho puntual en segundo plano sin cambiar de aplicación."
+      step3_title: "Se publica solo a la hora perfecta",
+      step3_desc: "Publica al instante o déjalo programado. La app publica por ti en todas tus redes a la vez, incluso si tu teléfono está bloqueado o guardado.",
+      step3_tip: "🚀 Tu asistente trabaja 24/7 sin que tengas que estar pendiente."
     },
     comparison: {
-      section_badge: "Eficiencia para Creadores y Agencias",
-      title: "¿En qué te ayuda realmente HubSocial en tu día a día?",
-      subtitle: "Tanto si creas para tu marca personal como si gestionas múltiples cuentas de clientes.",
-      bad_title: "Sin HubSocial (El desgaste habitual)",
-      bad_item1: "Horas frente a la pantalla en blanco intentando idear qué publicar hoy.",
-      bad_item2: "Copiar, pegar, recortar imágenes y adaptar hashtags a mano en 5 apps distintas.",
-      bad_item3: "Riesgo de equivocarte de cuenta al alternar entre perfiles de clientes.",
-      bad_item4: "Pagar costosas herramientas de escritorio pensadas para computadoras.",
-      good_title: "Con HubSocial AI (Tu flujo creativo organizado)",
-      good_item1: "Borradores de alta calidad en segundos que tú revisas y apruebas antes de salir.",
-      good_item2: "Espacios 100% separados por marca o cliente para nunca mezclar publicaciones.",
-      good_item3: "Programación centralizada que publica puntualmente en tus redes seleccionadas.",
-      good_item4: "Toda la potencia de creación y gestión en tu teléfono Android por un costo accesible."
+      section_badge: "Ahorro Real de Tiempo",
+      title: "¿En qué te ayuda realmente SocialHub?",
+      subtitle: "Descubre cómo cambia tu día a día frente a gestionar tus redes a mano.",
+      bad_title: "Sin SocialHub (El caos tradicional)",
+      bad_item1: "Horas frente a la pantalla en blanco sin saber qué publicar hoy.",
+      bad_item2: "Abrir 5 aplicaciones distintas, copiar textos, recortar fotos y reescribir hashtags a mano.",
+      bad_item3: "Olvidar publicar en las horas pico o tener que interrumpir tus reuniones para subir un post.",
+      bad_item4: "Pagar suscripciones caras de $80 a $200 al mes en herramientas complicadas de PC.",
+      good_title: "Con SocialHub AI (Tu contenido resuelto)",
+      good_item1: "Ideas infinitas y redacción profesional adaptada a tu negocio en 5 segundos.",
+      good_item2: "Un solo toque publica o programa en Facebook, Instagram, LinkedIn, Threads, X y Reddit.",
+      good_item3: "Publicador automático 24/7 que trabaja por ti mientras duermes o atiendes a tus clientes.",
+      good_item4: "Todo desde una app rápida y moderna en tu teléfono Android por una fracción del costo."
     },
     features: {
       section_badge: "Lo que hace por ti",
@@ -267,8 +267,8 @@ window.TRANSLATIONS = {
 
   en: {
     meta: {
-      title: "HubSocial AI ✨ AI Social Media Suite for Creators & Marketing Agencies",
-      description: "Manage multiple brands, draft on-brand content with contextual AI, maintain 100% editorial control, and reliably schedule to Facebook, Instagram, Threads, LinkedIn, X, and Reddit from Android."
+      title: "SocialHub AI ✨ Your Autonomous Multi-Brand AI Social Media Suite",
+      description: "Manage multiple brands, generate omnichannel content with RAG-contextualized AI, and publish to Facebook, Instagram, Threads, LinkedIn, X, and Reddit with an autonomous 24/7 Vigilante Agent."
     },
     nav: {
       how_it_works: "How It Works",
@@ -281,11 +281,11 @@ window.TRANSLATIONS = {
       download_btn: "Download App"
     },
     hero: {
-      badge: "✨ For Content Creators, Community Managers & Agencies",
-      title_part1: "Create, Customize & Schedule Your",
-      title_gradient: "Social Media with AI",
-      title_part2: "Under Total Control",
-      subtitle: "The tool that powers your creative workflow without taking away your control. AI generates ideas and tailored drafts for each network, you review and approve every single detail, and HubSocial handles reliable scheduling and publishing across Facebook, Instagram, LinkedIn, Threads, X, and Reddit from your Android phone.",
+      badge: "✨ Your AI Social Media Assistant",
+      title_part1: "Create & Publish on All Your",
+      title_gradient: "Social Networks with AI",
+      title_part2: "in Seconds",
+      subtitle: "Tired of wasting hours figuring out what to post? SocialHub writes on-brand posts with AI and automatically publishes to Facebook, Instagram, LinkedIn, Threads, X, and Reddit from a single app on your Android phone.",
       cta_primary: "Download for Android",
       cta_secondary: "See How It Works (3 Steps)",
       floating_tag_agency: "For You or Your Clients",
@@ -313,24 +313,24 @@ window.TRANSLATIONS = {
       step2_desc: "In seconds, get custom proposals with hashtags and ideal formatting: professional for LinkedIn, visual for Instagram, punchy for X.",
       step2_tip: "✍️ You have the final say: edit copy, change visuals, or fine-tune details.",
       step3_badge: "3",
-      step3_title: "Approve and schedule in one tap",
-      step3_desc: "Queue your approved posts on the calendar. HubSocial delivers them to each network on schedule without manual copy-pasting.",
-      step3_tip: "🚀 Reliable background delivery across networks without app switching."
+      step3_title: "Publishes automatically at the best time",
+      step3_desc: "Publish immediately or schedule ahead. The app publishes across all your networks simultaneously, even if your phone is locked or away.",
+      step3_tip: "🚀 Works 24/7 in the background without needing your supervision."
     },
     comparison: {
-      section_badge: "Efficiency for Creators & Agencies",
-      title: "How Does HubSocial Actually Help in Your Daily Workflow?",
-      subtitle: "Whether you create for your personal brand or manage accounts for multiple clients.",
-      bad_title: "Without HubSocial (The traditional hassle)",
-      bad_item1: "Hours staring at a blank screen struggling to brainstorm what to post today.",
-      bad_item2: "Copying, pasting, resizing images, and typing hashtags by hand across 5 different apps.",
-      bad_item3: "High risk of posting to the wrong client account when switching profiles.",
-      bad_item4: "Paying expensive desktop tools with bloated per-seat pricing.",
-      good_title: "With HubSocial AI (Your organized creative flow)",
-      good_item1: "High-quality drafts in seconds that you inspect, edit, and approve before publishing.",
-      good_item2: "100% isolated spaces per brand or client to eliminate cross-posting mistakes.",
-      good_item3: "Centralized scheduling that reliably publishes to all your selected channels.",
-      good_item4: "All the creation and management power on your Android phone at an accessible price."
+      section_badge: "Real Time Savings",
+      title: "How SocialHub Actually Helps Your Everyday Workflow",
+      subtitle: "See how your routine transforms compared to handling social media manually.",
+      bad_title: "Without SocialHub (The traditional hassle)",
+      bad_item1: "Hours staring at a blank screen wondering what to post today.",
+      bad_item2: "Opening 5 separate apps, copying text, resizing photos, and typing hashtags by hand.",
+      bad_item3: "Forgetting peak posting hours or interrupting your busy workday to post.",
+      bad_item4: "Paying $80 to $200/mo for bloated, desktop-only social tools.",
+      good_title: "With SocialHub AI (Your content on autopilot)",
+      good_item1: "Endless ideas and professional on-brand copy created in 5 seconds.",
+      good_item2: "One tap publishes or schedules across Facebook, Instagram, LinkedIn, Threads, X, and Reddit.",
+      good_item3: "24/7 autonomous publisher working for you while you sleep or focus on clients.",
+      good_item4: "Full control right from your fast Android app at a fraction of the cost."
     },
     features: {
       section_badge: "What It Does For You",
@@ -524,8 +524,8 @@ window.TRANSLATIONS = {
 
   pt: {
     meta: {
-      title: "HubSocial AI ✨ Suíte de Redes Sociais com IA para Criadores e Agências",
-      description: "Gerencie múltiplas marcas, gere rascunhos no tom da sua marca com IA contextual, mantenha 100% de controle editorial e agende com segurança no Facebook, Instagram, Threads, LinkedIn, X e Reddit pelo Android."
+      title: "SocialHub AI ✨ Sua Suíte Multi-Marca de Automação de Redes com IA",
+      description: "Gerencie múltiplas marcas, crie conteúdo contextualizado com IA RAG e publique no Facebook, Instagram, Threads, LinkedIn, X e Reddit com um Agente Vigilante autônomo 24/7."
     },
     nav: {
       how_it_works: "Como Funciona",
@@ -541,8 +541,8 @@ window.TRANSLATIONS = {
       badge: "✨ Para Criadores de Conteúdo, Community Managers e Agências",
       title_part1: "Crie, Personalize e Agende suas",
       title_gradient: "Redes Sociais com IA",
-      title_part2: "e Controle Total",
-      subtitle: "A ferramenta que potencializa sua criatividade sem tirar o seu controle. A IA gera ideias e rascunhos adaptados a cada rede, você revisa e aprova cada detalhe, e o HubSocial cuida do agendamento pontual e publicação no Facebook, Instagram, LinkedIn, Threads, X e Reddit direto do seu celular Android.",
+      title_part2: "em Segundos",
+      subtitle: "Cansado de perder horas pensando no que postar? O SocialHub escreve seus posts com IA no tom da sua marca e publica automaticamente no Facebook, Instagram, LinkedIn, Threads, X e Reddit direto de um único aplicativo no seu Android.",
       cta_primary: "Baixar para Android",
       cta_secondary: "Ver Como Funciona (3 Passos)",
       floating_tag_agency: "Para Você ou Seus Clientes",
@@ -570,24 +570,24 @@ window.TRANSLATIONS = {
       step2_desc: "Em segundos você recebe propostas personalizadas com hashtags e formato ideal: profissional para LinkedIn, visual para Instagram e direto para o X.",
       step2_tip: "✍️ Você tem a palavra final: edite o texto, troque imagens ou ajuste detalhes.",
       step3_badge: "3",
-      step3_title: "Aprove e agende com um toque",
-      step3_desc: "Deixe suas publicações aprovadas no calendário. O HubSocial cuida de enviá-las para cada rede no horário certo sem copiar e colar manualmente.",
-      step3_tip: "🚀 Envio pontual em segundo plano sem precisar trocar de aplicativo."
+      step3_title: "Publica sozinho no horário perfeito",
+      step3_desc: "Publique na hora ou deixe agendado. O aplicativo publica em todas as suas redes simultaneamente, mesmo com o celular bloqueado ou guardado.",
+      step3_tip: "🚀 Seu assistente trabalha 24 horas por dia sem precisar da sua atenção."
     },
     comparison: {
-      section_badge: "Eficiência para Criadores e Agências",
-      title: "No que o HubSocial Realmente Ajuda Você no Dia a Dia?",
-      subtitle: "Tanto para quem cria para sua marca pessoal quanto para quem gerencia várias contas de clientes.",
-      bad_title: "Sem o HubSocial (O desgaste habitual)",
-      bad_item1: "Horas diante da tela em branco tentando ter ideias do que publicar hoje.",
-      bad_item2: "Copiar, colar, redimensionar fotos e adaptar hashtags manualmente em 5 apps diferentes.",
-      bad_item3: "Risco de errar a conta ao alternar entre perfis de clientes.",
-      bad_item4: "Pagar ferramentas caras de computador com preços abusivos por usuário.",
-      good_title: "Com HubSocial AI (Seu fluxo criativo organizado)",
-      good_item1: "Rascunhos de alta qualidade em segundos que você revisa e aprova antes de publicar.",
-      good_item2: "Espaços 100% isolados por marca ou cliente para nunca misturar postagens.",
-      good_item3: "Agendamento centralizado que publica com pontualidade em todas as redes escolhidas.",
-      good_item4: "Todo o poder de criação e gestão no seu celular Android por um preço acessível."
+      section_badge: "Economia Real de Tempo",
+      title: "No que o SocialHub Realmente Ajuda Você?",
+      subtitle: "Veja como seu dia a dia se transforma em relação a gerenciar redes manualmente.",
+      bad_title: "Sem o SocialHub (O caos tradicional)",
+      bad_item1: "Horas olhando para uma tela em branco sem saber o que postar hoje.",
+      bad_item2: "Abrir 5 aplicativos diferentes, copiar textos, cortar fotos e digitar hashtags à mão.",
+      bad_item3: "Esquecer os horários de maior engajamento ou parar o trabalho para postar.",
+      bad_item4: "Pagar assinaturas caras de R$ 300 a R$ 800 por mês em ferramentas complexas de PC.",
+      good_title: "Com o SocialHub AI (Seu conteúdo no piloto automático)",
+      good_item1: "Ideias infinitas e redação profissional adaptada ao seu negócio em 5 segundos.",
+      good_item2: "Um único toque publica ou agenda no Facebook, Instagram, LinkedIn, Threads, X e Reddit.",
+      good_item3: "Publicador automático 24/7 trabalhando enquanto você dorme ou atende clientes.",
+      good_item4: "Tudo em um app rápido e moderno no seu celular Android por uma fração do preço."
     },
     features: {
       section_badge: "O que Faz por Você",
