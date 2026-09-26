@@ -1,6 +1,6 @@
-# SocialHub AI — Landing Page Multi-idioma (GitHub Pages)
+# HubSocial AI — Landing Page Multi-idioma (GitHub Pages)
 
-Landing page estática y ultra-optimizada para la aplicación **SocialHub AI**, diseñada con estética glassmorphism en modo oscuro, micro-interacciones, tipografía moderna (Outfit & Inter), diseño responsive y arquitectura multi-idioma con diccionario centralizado en un solo archivo.
+Landing page estática y ultra-optimizada para la aplicación **HubSocial AI**, diseñada con estética glassmorphism en modo oscuro, micro-interacciones, tipografía moderna (Outfit & Inter), diseño responsive y arquitectura multi-idioma con diccionario centralizado en un solo archivo.
 
 ---
 
@@ -61,7 +61,7 @@ D:\GitHub\socialhub\
 cd D:\GitHub\socialhub
 git init
 git add .
-git commit -m "feat: Initial commit of SocialHub AI multi-language landing page"
+git commit -m "feat: Initial commit of HubSocial AI multi-language landing page"
 git branch -M main
 git remote add origin https://github.com/Edmyjose/socialhub-landing.git
 git push -u origin main
