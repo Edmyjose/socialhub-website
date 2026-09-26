@@ -28,7 +28,7 @@ window.TRANSLATIONS = {
       title_part1: "Crea, Personaliza y Programa tus",
       title_gradient: "Redes Sociales con IA",
       title_part2: "en Segundos",
-      subtitle: "¿Cansado de perder horas pensando qué publicar? SocialHub redacta tus publicaciones con IA con el estilo de tu marca y las publica automáticamente en Facebook, Instagram, LinkedIn, Threads, X y Reddit desde una sola app en tu teléfono Android.",
+      subtitle: "¿Cansado de perder horas pensando qué publicar? HubSocial AI redacta tus publicaciones con IA con el estilo de tu marca y las publica automáticamente en Facebook, Instagram, LinkedIn, Threads, X y Reddit desde una sola app en tu teléfono Android.",
       cta_primary: "Descargar para Android",
       cta_secondary: "Ver Cómo Funciona (3 Pasos)",
       floating_tag_agency: "Para Ti o Tus Clientes",
@@ -62,14 +62,14 @@ window.TRANSLATIONS = {
     },
     comparison: {
       section_badge: "Ahorro Real de Tiempo",
-      title: "¿En qué te ayuda realmente SocialHub?",
+      title: "¿En qué te ayuda realmente HubSocial AI?",
       subtitle: "Descubre cómo cambia tu día a día frente a gestionar tus redes a mano.",
-      bad_title: "Sin SocialHub (El caos tradicional)",
+      bad_title: "Sin HubSocial AI (El caos tradicional)",
       bad_item1: "Horas frente a la pantalla en blanco sin saber qué publicar hoy.",
       bad_item2: "Abrir 5 aplicaciones distintas, copiar textos, recortar fotos y reescribir hashtags a mano.",
       bad_item3: "Olvidar publicar en las horas pico o tener que interrumpir tus reuniones para subir un post.",
       bad_item4: "Pagar suscripciones caras de $80 a $200 al mes en herramientas complicadas de PC.",
-      good_title: "Con SocialHub AI (Tu contenido resuelto)",
+      good_title: "Con HubSocial AI (Tu contenido resuelto)",
       good_item1: "Ideas infinitas y redacción profesional adaptada a tu negocio en 5 segundos.",
       good_item2: "Un solo toque publica o programa en Facebook, Instagram, LinkedIn, Threads, X y Reddit.",
       good_item3: "Publicador automático 24/7 que trabaja por ti mientras duermes o atiendes a tus clientes.",
@@ -267,7 +267,7 @@ window.TRANSLATIONS = {
 
   en: {
     meta: {
-      title: "SocialHub AI ✨ Your Autonomous Multi-Brand AI Social Media Suite",
+      title: "HubSocial AI ✨ Your Autonomous Multi-Brand AI Social Media Suite",
       description: "Manage multiple brands, generate omnichannel content with RAG-contextualized AI, and publish to Facebook, Instagram, Threads, LinkedIn, X, and Reddit with an autonomous 24/7 Vigilante Agent."
     },
     nav: {
@@ -285,7 +285,7 @@ window.TRANSLATIONS = {
       title_part1: "Create & Publish on All Your",
       title_gradient: "Social Networks with AI",
       title_part2: "in Seconds",
-      subtitle: "Tired of wasting hours figuring out what to post? SocialHub writes on-brand posts with AI and automatically publishes to Facebook, Instagram, LinkedIn, Threads, X, and Reddit from a single app on your Android phone.",
+      subtitle: "Tired of wasting hours figuring out what to post? HubSocial AI writes on-brand posts with AI and automatically publishes to Facebook, Instagram, LinkedIn, Threads, X, and Reddit from a single app on your Android phone.",
       cta_primary: "Download for Android",
       cta_secondary: "See How It Works (3 Steps)",
       floating_tag_agency: "For You or Your Clients",
@@ -319,14 +319,14 @@ window.TRANSLATIONS = {
     },
     comparison: {
       section_badge: "Real Time Savings",
-      title: "How SocialHub Actually Helps Your Everyday Workflow",
+      title: "How HubSocial AI Actually Helps Your Everyday Workflow",
       subtitle: "See how your routine transforms compared to handling social media manually.",
-      bad_title: "Without SocialHub (The traditional hassle)",
+      bad_title: "Without HubSocial AI (The traditional hassle)",
       bad_item1: "Hours staring at a blank screen wondering what to post today.",
       bad_item2: "Opening 5 separate apps, copying text, resizing photos, and typing hashtags by hand.",
       bad_item3: "Forgetting peak posting hours or interrupting your busy workday to post.",
       bad_item4: "Paying $80 to $200/mo for bloated, desktop-only social tools.",
-      good_title: "With SocialHub AI (Your content on autopilot)",
+      good_title: "With HubSocial AI (Your content on autopilot)",
       good_item1: "Endless ideas and professional on-brand copy created in 5 seconds.",
       good_item2: "One tap publishes or schedules across Facebook, Instagram, LinkedIn, Threads, X, and Reddit.",
       good_item3: "24/7 autonomous publisher working for you while you sleep or focus on clients.",
@@ -524,7 +524,7 @@ window.TRANSLATIONS = {
 
   pt: {
     meta: {
-      title: "SocialHub AI ✨ Sua Suíte Multi-Marca de Automação de Redes com IA",
+      title: "HubSocial AI ✨ Sua Suíte Multi-Marca de Automação de Redes com IA",
       description: "Gerencie múltiplas marcas, crie conteúdo contextualizado com IA RAG e publique no Facebook, Instagram, Threads, LinkedIn, X e Reddit com um Agente Vigilante autônomo 24/7."
     },
     nav: {
@@ -542,7 +542,7 @@ window.TRANSLATIONS = {
       title_part1: "Crie, Personalize e Agende suas",
       title_gradient: "Redes Sociais com IA",
       title_part2: "em Segundos",
-      subtitle: "Cansado de perder horas pensando no que postar? O SocialHub escreve seus posts com IA no tom da sua marca e publica automaticamente no Facebook, Instagram, LinkedIn, Threads, X e Reddit direto de um único aplicativo no seu Android.",
+      subtitle: "Cansado de perder horas pensando no que postar? O HubSocial AI escreve seus posts com IA no tom da sua marca e publica automaticamente no Facebook, Instagram, LinkedIn, Threads, X e Reddit direto de um único aplicativo no seu Android.",
       cta_primary: "Baixar para Android",
       cta_secondary: "Ver Como Funciona (3 Passos)",
       floating_tag_agency: "Para Você ou Seus Clientes",
@@ -576,14 +576,14 @@ window.TRANSLATIONS = {
     },
     comparison: {
       section_badge: "Economia Real de Tempo",
-      title: "No que o SocialHub Realmente Ajuda Você?",
+      title: "No que o HubSocial AI Realmente Ajuda Você?",
       subtitle: "Veja como seu dia a dia se transforma em relação a gerenciar redes manualmente.",
-      bad_title: "Sem o SocialHub (O caos tradicional)",
+      bad_title: "Sem o HubSocial AI (O caos tradicional)",
       bad_item1: "Horas olhando para uma tela em branco sem saber o que postar hoje.",
       bad_item2: "Abrir 5 aplicativos diferentes, copiar textos, cortar fotos e digitar hashtags à mão.",
       bad_item3: "Esquecer os horários de maior engajamento ou parar o trabalho para postar.",
       bad_item4: "Pagar assinaturas caras de R$ 300 a R$ 800 por mês em ferramentas complexas de PC.",
-      good_title: "Com o SocialHub AI (Seu conteúdo no piloto automático)",
+      good_title: "Com o HubSocial AI (Seu conteúdo no piloto automático)",
       good_item1: "Ideias infinitas e redação profissional adaptada ao seu negócio em 5 segundos.",
       good_item2: "Um único toque publica ou agenda no Facebook, Instagram, LinkedIn, Threads, X e Reddit.",
       good_item3: "Publicador automático 24/7 trabalhando enquanto você dorme ou atende clientes.",

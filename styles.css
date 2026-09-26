@@ -1,5 +1,5 @@
 /* ==========================================================================
-   SocialHub AI - Modern Glassmorphism Design System (Vanilla CSS)
+   HubSocial AI - Modern Glassmorphism Design System (Vanilla CSS)
    Aesthetics: Deep Space Dark Mode, Vibrant Neons, Cosmic Glass & Micro-Interactions
    ========================================================================== */
 
@@ -13,8 +13,10 @@
   --bg-glass-hover: rgba(38, 26, 84, 0.75);
   
   --primary: #6366f1;
+  --primary-color: #6366f1;
   --primary-light: #818cf8;
   --primary-glow: rgba(99, 102, 241, 0.4);
+  --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #d946ef 100%);
   
   --accent-purple: #a855f7;
   --accent-fuchsia: #d946ef;
@@ -31,6 +33,9 @@
   --border-glass: rgba(255, 255, 255, 0.08);
   --border-glass-light: rgba(255, 255, 255, 0.16);
   --border-accent: rgba(168, 85, 247, 0.35);
+  
+  /* Brand Typography Accent Color: #38bdf8 (Celeste neón) | Alternate: #818cf8 (Indigo) */
+  --brand-hub-color: #38bdf8;
   
   /* Radii & Shadows */
   --radius-sm: 10px;
@@ -306,6 +311,19 @@ h1, h2, h3, h4, .font-heading {
   border-radius: var(--radius-full);
   font-weight: 700;
   letter-spacing: 0.05em;
+}
+
+/* Brand Dual-Color Accent */
+.brand-hub {
+  color: var(--brand-hub-color, #38bdf8);
+  font-weight: 800;
+  text-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+  transition: color var(--transition-fast), text-shadow var(--transition-fast);
+}
+
+.brand-social {
+  color: var(--text-white);
+  font-weight: 800;
 }
 
 .nav-links {

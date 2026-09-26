@@ -1,35 +1,44 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Primary Meta Tags -->
-  <title>HubSocial AI ✨ Tu Suite Multi-Marca de Automatización de Redes con IA</title>
-  <meta name="title" content="HubSocial AI ✨ Tu Suite Multi-Marca de Automatización de Redes con IA">
+  <title>HubSocial AI ✨ Your Autonomous Multi-Brand AI Social Media Suite</title>
+  <meta name="title" content="HubSocial AI ✨ Your Autonomous Multi-Brand AI Social Media Suite">
   <meta name="description"
-    content="Administra múltiples marcas, genera contenido omnicanal con IA contextualizada RAG y publica en Facebook, Instagram, Threads, LinkedIn, X y Reddit con un Agente Vigilante autónomo 24/7.">
+    content="Manage multiple brands, generate omni-channel content with RAG-contextualized AI, and publish to Facebook, Instagram, Threads, LinkedIn, X, and Reddit with a 24/7 autonomous Vigilante Agent.">
   <meta name="keywords"
-    content="social media ai, automatizacion redes sociales, multi marca, community manager ai, rag ai, meta api, instagram reels, threads ai, reddit bot, ejs studios">
+    content="social media ai, social media automation, multi-brand, ai community manager, rag ai, meta api, instagram reels, threads ai, reddit bot, ejs studios">
   <meta name="author" content="EJS Studios">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#070510">
 
+  <!-- Multilingual Alternate Hreflang Tags -->
+  <link rel="alternate" hreflang="en" href="https://socialhub.ejsstudios.com/?lang=en">
+  <link rel="alternate" hreflang="es" href="https://socialhub.ejsstudios.com/?lang=es">
+  <link rel="alternate" hreflang="pt" href="https://socialhub.ejsstudios.com/?lang=pt">
+  <link rel="alternate" hreflang="x-default" href="https://socialhub.ejsstudios.com/">
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://socialhub.ejsstudios.com/">
-  <meta property="og:title" content="HubSocial AI ✨ Tu Suite Multi-Marca de Automatización de Redes con IA">
+  <meta property="og:title" content="HubSocial AI ✨ Your Autonomous Multi-Brand AI Social Media Suite">
   <meta property="og:description"
-    content="Administra múltiples marcas, genera contenido omnicanal con IA contextualizada RAG y publica en Facebook, Instagram, Threads, LinkedIn, X y Reddit con un Agente Vigilante autónomo 24/7.">
+    content="Manage multiple brands, generate omni-channel content with RAG-contextualized AI, and publish to Facebook, Instagram, Threads, LinkedIn, X, and Reddit with a 24/7 autonomous Vigilante Agent.">
   <meta property="og:image" content="https://socialhub.ejsstudios.com/images/screen-agency.png">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="pt_BR">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://socialhub.ejsstudios.com/">
-  <meta property="twitter:title" content="HubSocial AI ✨ Tu Suite Multi-Marca de Automatización de Redes con IA">
+  <meta property="twitter:title" content="HubSocial AI ✨ Your Autonomous Multi-Brand AI Social Media Suite">
   <meta property="twitter:description"
-    content="Administra múltiples marcas, genera contenido omnicanal con IA contextualizada RAG y publica en Facebook, Instagram, Threads, LinkedIn, X y Reddit con un Agente Vigilante autónomo 24/7.">
+    content="Manage multiple brands, generate omni-channel content with RAG-contextualized AI, and publish to Facebook, Instagram, Threads, LinkedIn, X, and Reddit with a 24/7 autonomous Vigilante Agent.">
   <meta property="twitter:image" content="https://socialhub.ejsstudios.com/images/screen-agency.png">
 
   <!-- Canonical -->
@@ -84,38 +93,36 @@
   <header class="site-header" id="siteHeader">
     <div class="container nav-container">
       <a href="#" class="nav-brand" id="brandLogo">
-        <img src="images/logo.webp" alt="HubSocial AI Logo" class="nav-brand-logo">
-        <span>HubSocial <span class="nav-brand-badge">AI</span></span>
+        <img src="images/logo.webp" alt="HubSocial AI Logo" class="nav-brand-logo" width="36" height="36" decoding="async">
+        <span><span class="brand-hub">Hub</span><span class="brand-social">Social</span> <span class="nav-brand-badge">AI</span></span>
       </a>
 
       <nav>
         <ul class="nav-links" id="navLinks">
-          <li><a href="#how-it-works" data-i18n="nav.how_it_works">Cómo Funciona</a></li>
-          <li><a href="#platforms" data-i18n="nav.platforms">Redes Sociales</a></li>
-          <li><a href="#features" data-i18n="nav.features">Funciones</a></li>
-          <li><a href="#vigilante" data-i18n="nav.vigilante">Publicador 24/7</a></li>
-          <li><a href="#agency" data-i18n="nav.agency">Múltiples Marcas</a></li>
-          <li><a href="#pricing" data-i18n="nav.pricing">Precios</a></li>
-          <li><a href="#faq" data-i18n="nav.faq">Preguntas</a></li>
+          <li><a href="#how-it-works" data-i18n="nav.how_it_works">How It Works</a></li>
+          <li><a href="#features" data-i18n="nav.features">Features</a></li>
+          <li><a href="#agency" data-i18n="nav.agency">Multi-Brand</a></li>
+          <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
+          <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
         </ul>
       </nav>
 
       <div class="nav-actions">
         <!-- Language Switcher Dropdown -->
         <div class="lang-selector-wrapper">
-          <button class="lang-btn" id="langBtn" aria-label="Cambiar idioma">
-            <span id="currentLangFlag">🇪🇸</span>
-            <span id="currentLangLabel">ES</span>
+          <button class="lang-btn" id="langBtn" type="button" aria-label="Select language">
+            <span id="currentLangFlag">🇺🇸</span>
+            <span id="currentLangLabel">EN</span>
             <i class="fa-solid fa-chevron-down arrow"></i>
           </button>
           <div class="lang-dropdown" id="langDropdown">
-            <button class="lang-option active" data-lang="es">
-              <span>🇪🇸</span> Español
-            </button>
-            <button class="lang-option" data-lang="en">
+            <button class="lang-option active" type="button" data-lang="en">
               <span>🇺🇸</span> English
             </button>
-            <button class="lang-option" data-lang="pt">
+            <button class="lang-option" type="button" data-lang="es">
+              <span>🇪🇸</span> Español
+            </button>
+            <button class="lang-option" type="button" data-lang="pt">
               <span>🇧🇷</span> Português
             </button>
           </div>
@@ -124,11 +131,11 @@
         <!-- Download CTA -->
         <a href="#download" class="btn btn-primary btn-sm" id="navDownloadBtn">
           <i class="fa-brands fa-google-play"></i>
-          <span data-i18n="nav.download_btn">Descargar App</span>
+          <span data-i18n="nav.download_btn">Download App</span>
         </a>
 
         <!-- Mobile Menu Hamburger -->
-        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Abrir menú de navegación">
+        <button class="mobile-toggle" id="mobileMenuToggle" type="button" aria-label="Open navigation menu">
           <i class="fa-solid fa-bars"></i>
         </button>
       </div>
@@ -142,26 +149,25 @@
     <div class="container hero-grid">
       <div class="hero-content">
         <div class="section-badge" data-i18n="hero.badge">
-          ✨ Para Creadores de Contenido, Community Managers y Agencias
+          ✨ Your AI Social Media Assistant
         </div>
         <h1 class="hero-title">
-          <span data-i18n="hero.title_part1">Crea, Personaliza y Programa tus</span>
-          <span class="gradient-text" data-i18n="hero.title_gradient">Redes Sociales con IA</span>
-          <span data-i18n="hero.title_part2">y Control Total</span>
+          <span data-i18n="hero.title_part1">Create & Publish on All Your</span>
+          <span class="gradient-text" data-i18n="hero.title_gradient">Social Networks with AI</span>
+          <span data-i18n="hero.title_part2">in Seconds</span>
         </h1>
         <p class="hero-subtitle" data-i18n="hero.subtitle">
-          ¿Cansado de perder horas pensando qué publicar? SocialHub redacta tus publicaciones con IA con el estilo de tu
-          marca y las publica automáticamente en Facebook, Instagram, LinkedIn, Threads, X y Reddit desde una sola app
-          en tu teléfono Android.
+          Tired of wasting hours figuring out what to post? HubSocial AI writes on-brand posts with AI and automatically
+          publishes to Facebook, Instagram, LinkedIn, Threads, X, and Reddit from a single app on your Android phone.
         </p>
         <div class="hero-actions">
           <a href="#download" class="btn btn-primary" id="heroCtaPrimary">
             <i class="fa-brands fa-android"></i>
-            <span data-i18n="hero.cta_primary">Descargar para Android</span>
+            <span data-i18n="hero.cta_primary">Download for Android</span>
           </a>
           <a href="#how-it-works" class="btn btn-secondary" id="heroCtaSecondary">
             <i class="fa-solid fa-sparkles"></i>
-            <span data-i18n="hero.cta_secondary">Ver Cómo Funciona (3 Pasos)</span>
+            <span data-i18n="hero.cta_secondary">See How It Works (3 Steps)</span>
           </a>
         </div>
 
@@ -169,19 +175,19 @@
         <div class="hero-stats">
           <div class="stat-item">
             <h3 data-i18n="hero.stat_networks">6+</h3>
-            <p data-i18n="hero.stat_networks_label">Redes Sociales Oficiales</p>
+            <p data-i18n="hero.stat_networks_label">Official Social Networks</p>
           </div>
           <div class="stat-item">
             <h3 data-i18n="hero.stat_uptime">100%</h3>
-            <p data-i18n="hero.stat_uptime_label">Control y Aprobación Previa</p>
+            <p data-i18n="hero.stat_uptime_label">Control & Prior Approval</p>
           </div>
           <div class="stat-item">
-            <h3 data-i18n="hero.stat_accuracy">Multi-Marca</h3>
-            <p data-i18n="hero.stat_accuracy_label">Clientes y Proyectos Separados</p>
+            <h3 data-i18n="hero.stat_accuracy">Multi-Brand</h3>
+            <p data-i18n="hero.stat_accuracy_label">Separate Clients & Projects</p>
           </div>
           <div class="stat-item">
             <h3 data-i18n="hero.stat_safety">15+ hrs</h3>
-            <p data-i18n="hero.stat_safety_label">Ahorradas por Semana</p>
+            <p data-i18n="hero.stat_safety_label">Saved Every Week</p>
           </div>
         </div>
       </div>
@@ -190,16 +196,16 @@
       <div class="hero-visual">
         <div class="floating-badge badge-top">
           <i class="fa-solid fa-building-user"></i>
-          <span data-i18n="hero.floating_tag_agency">Para Ti o Tus Clientes</span>
+          <span data-i18n="hero.floating_tag_agency">For You or Your Clients</span>
         </div>
         <div class="phone-mockup-frame">
           <div class="phone-screen">
-            <img src="images/screen-agency.png" alt="SocialHub AI Command Center" id="heroDeviceScreen">
+            <img src="images/screen-agency.png" alt="HubSocial AI Command Center" id="heroDeviceScreen" width="1080" height="2400" decoding="async">
           </div>
         </div>
         <div class="floating-badge badge-bottom">
           <i class="fa-solid fa-brain"></i>
-          <span data-i18n="hero.floating_tag_ai">Borradores con tu Tono Real</span>
+          <span data-i18n="hero.floating_tag_ai">Drafts in Your True Voice</span>
         </div>
       </div>
     </div>
@@ -258,7 +264,7 @@
     <div class="container">
       <div class="section-header">
         <div class="section-badge" data-i18n="comparison.section_badge">Ahorro Real de Tiempo</div>
-        <h2 data-i18n="comparison.title">¿En qué te ayuda realmente SocialHub?</h2>
+        <h2 data-i18n="comparison.title">¿En qué te ayuda realmente HubSocial AI?</h2>
         <p data-i18n="comparison.subtitle">Descubre cómo cambia tu día a día frente a gestionar tus redes a mano.</p>
       </div>
 
@@ -267,7 +273,7 @@
         <div class="comparison-card comparison-bad">
           <div class="comparison-header">
             <div class="comparison-icon-bad"><i class="fa-solid fa-xmark"></i></div>
-            <div class="comparison-title" data-i18n="comparison.bad_title">Sin SocialHub (El caos tradicional)</div>
+            <div class="comparison-title" data-i18n="comparison.bad_title">Sin HubSocial AI (El caos tradicional)</div>
           </div>
           <ul class="comparison-list">
             <li><i class="fa-solid fa-circle-xmark"></i> <span data-i18n="comparison.bad_item1">Horas frente a la
@@ -285,7 +291,7 @@
         <div class="comparison-card comparison-good">
           <div class="comparison-header">
             <div class="comparison-icon-good"><i class="fa-solid fa-check"></i></div>
-            <div class="comparison-title" data-i18n="comparison.good_title">Con SocialHub AI (Tu contenido resuelto)
+            <div class="comparison-title" data-i18n="comparison.good_title">Con HubSocial AI (Tu contenido resuelto)
             </div>
           </div>
           <ul class="comparison-list">
@@ -458,7 +464,7 @@
         <!-- Mini screenshot preview -->
         <div
           style="margin-top: 24px; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-glass);">
-          <img src="images/screen-hub.png" alt="HubSocial Connection Center" style="width: 100%; height: auto;">
+          <img src="images/screen-hub.png" alt="HubSocial AI Connection Center" loading="lazy" decoding="async" width="1080" height="2400" style="width: 100%; height: auto;">
         </div>
       </div>
     </div>
@@ -643,7 +649,7 @@
   <section class="agency-section" id="agency">
     <div class="container agency-grid">
       <div class="agency-visual">
-        <img src="images/screen-dashboard.png" alt="SocialHub AI Multi-Brand Client Portfolio">
+        <img src="images/screen-dashboard.png" alt="HubSocial AI Multi-Brand Client Portfolio" loading="lazy" decoding="async" width="1080" height="2400" style="width: 100%; height: auto;">
       </div>
 
       <div class="agency-content">
@@ -704,10 +710,10 @@
       <!-- Pricing Filter Tabs -->
       <div class="pricing-tabs-wrapper">
         <div class="pricing-tabs" role="tablist">
-          <button class="pricing-tab-btn active" data-filter="all" data-i18n="pricing.tab_all">Todos los Planes</button>
-          <button class="pricing-tab-btn" data-filter="creators" data-i18n="pricing.tab_creators">👤 Creadores & Marcas
+          <button class="pricing-tab-btn active" type="button" data-filter="all" data-i18n="pricing.tab_all">Todos los Planes</button>
+          <button class="pricing-tab-btn" type="button" data-filter="creators" data-i18n="pricing.tab_creators">👤 Creadores & Marcas
             (1-2 Marcas)</button>
-          <button class="pricing-tab-btn" data-filter="agencies" data-i18n="pricing.tab_agencies">🏢 Agencias & Escala
+          <button class="pricing-tab-btn" type="button" data-filter="agencies" data-i18n="pricing.tab_agencies">🏢 Agencias & Escala
             (Multi-Marca)</button>
         </div>
       </div>
@@ -911,7 +917,7 @@
       <div class="faq-container">
         <!-- Q1 -->
         <div class="faq-item">
-          <button class="faq-question">
+          <button class="faq-question" type="button">
             <span data-i18n="faq.q1">¿HubSocial AI almacena mis contraseñas de redes sociales?</span>
             <i class="fa-solid fa-chevron-down faq-chevron"></i>
           </button>
@@ -926,7 +932,7 @@
 
         <!-- Q2 -->
         <div class="faq-item">
-          <button class="faq-question">
+          <button class="faq-question" type="button">
             <span data-i18n="faq.q2">¿Cómo funciona el Agente Vigilante si mi teléfono se apaga o reinicia?</span>
             <i class="fa-solid fa-chevron-down faq-chevron"></i>
           </button>
@@ -941,7 +947,7 @@
 
         <!-- Q3 -->
         <div class="faq-item">
-          <button class="faq-question">
+          <button class="faq-question" type="button">
             <span data-i18n="faq.q3">¿Qué sucede si tengo varias marcas? ¿Se pueden mezclar las cuentas?</span>
             <i class="fa-solid fa-chevron-down faq-chevron"></i>
           </button>
@@ -956,7 +962,7 @@
 
         <!-- Q4 -->
         <div class="faq-item">
-          <button class="faq-question">
+          <button class="faq-question" type="button">
             <span data-i18n="faq.q4">¿La Inteligencia Artificial inventará datos o alucinará sobre mi negocio?</span>
             <i class="fa-solid fa-chevron-down faq-chevron"></i>
           </button>
@@ -971,7 +977,7 @@
 
         <!-- Q5 -->
         <div class="faq-item">
-          <button class="faq-question">
+          <button class="faq-question" type="button">
             <span data-i18n="faq.q5">¿Dónde puedo descargar la aplicación?</span>
             <i class="fa-solid fa-chevron-down faq-chevron"></i>
           </button>
@@ -985,7 +991,7 @@
 
         <!-- Q6 -->
         <div class="faq-item">
-          <button class="faq-question">
+          <button class="faq-question" type="button">
             <span data-i18n="faq.q6">¿Por qué X / Twitter requiere mis propias credenciales (BYOK)?</span>
             <i class="fa-solid fa-chevron-down faq-chevron"></i>
           </button>
@@ -1000,7 +1006,7 @@
 
         <!-- Q7 -->
         <div class="faq-item">
-          <button class="faq-question">
+          <button class="faq-question" type="button">
             <span data-i18n="faq.q7">¿Qué ocurre si una publicación falla o una red social reporta un error?</span>
             <i class="fa-solid fa-chevron-down faq-chevron"></i>
           </button>
@@ -1053,8 +1059,8 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
-            <img src="images/logo.webp" alt="HubSocial AI" style="width: 32px; height: 32px; border-radius: 8px;">
-            <h3>HubSocial <span class="gradient-text">AI</span></h3>
+            <img src="images/logo.webp" alt="HubSocial AI Logo" width="32" height="32" loading="lazy" decoding="async" style="width: 32px; height: 32px; border-radius: 8px;">
+            <h3><span class="brand-hub">Hub</span><span class="brand-social">Social</span> <span class="nav-brand-badge" style="font-size: 0.7rem; vertical-align: middle; margin-left: 4px;">AI</span></h3>
           </div>
           <p data-i18n="footer.tagline">HubSocial AI es una solución de automatización inteligente desarrollada con
             pasión por EJS Studios.</p>

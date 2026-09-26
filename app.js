@@ -13,7 +13,7 @@
     pt: { code: 'pt', label: 'Português', flag: '🇧🇷' }
   };
 
-  let currentLang = 'es';
+  let currentLang = 'en';
 
   /**
    * Helper to retrieve nested object property by dot notation (e.g., "hero.badge")
@@ -26,9 +26,9 @@
   /**
    * Apply selected language to all DOM elements with data-i18n attributes
    */
-  function applyLanguage(lang) {
+  function applyLanguage(lang, updateUrl = true) {
     if (!window.TRANSLATIONS || !window.TRANSLATIONS[lang]) {
-      console.warn(`[SocialHub i18n] Translations for language '${lang}' not found.`);
+      console.warn(`[HubSocial i18n] Translations for language '${lang}' not found.`);
       return;
     }
 
@@ -97,20 +97,47 @@
         opt.classList.remove('active');
       }
     });
+
+    // 6. Sync URL query parameter (?lang=...) without page reload
+    if (updateUrl && window.history && window.history.replaceState) {
+      const url = new URL(window.location.href);
+      if (lang === 'en') {
+        url.searchParams.delete('lang');
+      } else {
+        url.searchParams.set('lang', lang);
+      }
+      window.history.replaceState({}, '', url.toString());
+    }
   }
 
   /**
-   * Determine initial language: localStorage -> browser language -> fallback 'es'
+   * Determine initial language: URL query (?lang=..) -> localStorage -> browser language -> fallback 'en'
    */
   function detectInitialLanguage() {
+    // 1. URL search param check (e.g. ?lang=es)
+    try {
+      const urlParams = new URLSearchParams(window.location.search);
+      const urlLang = urlParams.get('lang');
+      if (urlLang && LANG_CONFIG[urlLang]) {
+        return urlLang;
+      }
+    } catch (e) {
+      // Fallback if URLSearchParams fails
+    }
+
+    // 2. Saved language preference
     const saved = localStorage.getItem('socialhub_lang');
     if (saved && LANG_CONFIG[saved]) {
       return saved;
     }
+
+    // 3. Browser language
     const browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+    if (browserLang.startsWith('es')) return 'es';
     if (browserLang.startsWith('pt')) return 'pt';
-    if (browserLang.startsWith('en')) return 'en';
-    return 'es';
+
+    // 4. Default fallback: English
+    return 'en';
   }
 
   /**
@@ -253,13 +280,19 @@
 
         if (filter === 'all') {
           if (creatorsGroup) creatorsGroup.style.display = 'block';
-          if (agenciesGroup) agenciesGroup.style.display = 'block';
+          if (agenciesGroup) {
+            agenciesGroup.style.display = 'block';
+            agenciesGroup.style.marginTop = '48px';
+          }
         } else if (filter === 'creators') {
           if (creatorsGroup) creatorsGroup.style.display = 'block';
           if (agenciesGroup) agenciesGroup.style.display = 'none';
         } else if (filter === 'agencies') {
           if (creatorsGroup) creatorsGroup.style.display = 'none';
-          if (agenciesGroup) agenciesGroup.style.display = 'block';
+          if (agenciesGroup) {
+            agenciesGroup.style.display = 'block';
+            agenciesGroup.style.marginTop = '0';
+          }
         }
       });
     });
@@ -275,8 +308,8 @@
     initFaqAccordion();
     initPricingTabs();
 
-    // Detect and apply initial language
+    // Detect and apply initial language (without altering initial URL unless user switches)
     const initialLang = detectInitialLanguage();
-    applyLanguage(initialLang);
+    applyLanguage(initialLang, false);
   });
 })();

@@ -8,9 +8,9 @@ Landing page estática y ultra-optimizada para la aplicación **HubSocial AI**, 
 
 Todos los textos, titulares, botones, descripciones de plataformas, preguntas frecuentes y metadatos residen en **[`translations.js`](translations.js)**.
 
-### Idiomas Soportados Inicialmente:
-- 🇪🇸 **Español (`es`)** — Predeterminado
-- 🇺🇸 **Inglés (`en`)**
+### Idiomas Soportados:
+- 🇺🇸 **Inglés (`en`)** — Predeterminado
+- 🇪🇸 **Español (`es`)**
 - 🇧🇷 **Português (`pt`)**
 
 ### ¿Cómo editar o corregir un texto?
