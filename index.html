@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>SocialHub AI ✨ Tu Suite Multi-Marca de Automatización de Redes con IA</title>
+  <meta name="title" content="SocialHub AI ✨ Tu Suite Multi-Marca de Automatización de Redes con IA">
+  <meta name="description" content="Administra múltiples marcas, genera contenido omnicanal con IA contextualizada RAG y publica en más de 10 plataformas con un Agente Vigilante autónomo 24/7.">
+  <meta name="keywords" content="social media ai, automatizacion redes sociales, multi marca, community manager ai, rag ai, meta api, instagram reels, threads ai, reddit bot, ejs studios">
+  <meta name="author" content="EJS Studios">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#070510">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://socialhub.ejsstudios.com/">
+  <meta property="og:title" content="SocialHub AI ✨ Tu Suite Multi-Marca de Automatización de Redes con IA">
+  <meta property="og:description" content="Administra múltiples marcas, genera contenido omnicanal con IA contextualizada RAG y publica en más de 10 plataformas con un Agente Vigilante autónomo 24/7.">
+  <meta property="og:image" content="https://socialhub.ejsstudios.com/images/screen-agency.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://socialhub.ejsstudios.com/">
+  <meta property="twitter:title" content="SocialHub AI ✨ Tu Suite Multi-Marca de Automatización de Redes con IA">
+  <meta property="twitter:description" content="Administra múltiples marcas, genera contenido omnicanal con IA contextualizada RAG y publica en más de 10 plataformas con un Agente Vigilante autónomo 24/7.">
+  <meta property="twitter:image" content="https://socialhub.ejsstudios.com/images/screen-agency.png">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://socialhub.ejsstudios.com/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="images/logo.webp">
+  <link rel="apple-touch-icon" href="images/logo.webp">
+
+  <!-- Google Fonts: Outfit (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema.org JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "SocialHub AI",
+    "operatingSystem": "Android",
+    "applicationCategory": "BusinessApplication",
+    "description": "Multi-brand autonomous AI social media automation suite with 24/7 Vigilante Agent, RAG context, and 10+ platform integrations.",
+    "url": "https://socialhub.ejsstudios.com/",
+    "author": {
+      "@type": "Organization",
+      "name": "EJS Studios",
+      "url": "https://ejsstudios.com/"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- =========================================================================
+       Header & Sticky Navigation Bar
+       ========================================================================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#" class="nav-brand" id="brandLogo">
+        <img src="images/logo.webp" alt="SocialHub AI Logo" class="nav-brand-logo">
+        <span>SocialHub <span class="nav-brand-badge">AI</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#features" data-i18n="nav.features">Características</a></li>
+          <li><a href="#platforms" data-i18n="nav.platforms">Plataformas</a></li>
+          <li><a href="#vigilante" data-i18n="nav.vigilante">Vigilante IA</a></li>
+          <li><a href="#agency" data-i18n="nav.agency">Modo Agencia</a></li>
+          <li><a href="#pricing" data-i18n="nav.pricing">Precios</a></li>
+          <li><a href="#faq" data-i18n="nav.faq">Preguntas</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Language Switcher Dropdown -->
+        <div class="lang-selector-wrapper">
+          <button class="lang-btn" id="langBtn" aria-label="Cambiar idioma">
+            <span id="currentLangFlag">🇪🇸</span>
+            <span id="currentLangLabel">ES</span>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+            <button class="lang-option active" data-lang="es">
+              <span>🇪🇸</span> Español
+            </button>
+            <button class="lang-option" data-lang="en">
+              <span>🇺🇸</span> English
+            </button>
+            <button class="lang-option" data-lang="pt">
+              <span>🇧🇷</span> Português
+            </button>
+          </div>
+        </div>
+
+        <!-- Download CTA -->
+        <a href="#download" class="btn btn-primary btn-sm" id="navDownloadBtn">
+          <i class="fa-brands fa-google-play"></i>
+          <span data-i18n="nav.download_btn">Descargar App</span>
+        </a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Abrir menú de navegación">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       Hero Section
+       ========================================================================= -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="section-badge" data-i18n="hero.badge">
+          🚀 Motor Autónomo de IA Multicanal v2.4
+        </div>
+        <h1 class="hero-title">
+          <span data-i18n="hero.title_part1">Domina tus Redes Sociales con un</span>
+          <span class="gradient-text" data-i18n="hero.title_gradient">Agente IA Autónomo</span>
+          <span data-i18n="hero.title_part2">y Multi-Marca</span>
+        </h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">
+          Gestiona ilimitadas marcas con total aislamiento, genera publicaciones hiper-contextualizadas con IA y sincroniza en segundo plano sin intervención manual.
+        </p>
+        <div class="hero-actions">
+          <a href="#download" class="btn btn-primary" id="heroCtaPrimary">
+            <i class="fa-brands fa-android"></i>
+            <span data-i18n="hero.cta_primary">Descargar para Android</span>
+          </a>
+          <a href="#features" class="btn btn-secondary" id="heroCtaSecondary">
+            <i class="fa-solid fa-sparkles"></i>
+            <span data-i18n="hero.cta_secondary">Ver Cómo Funciona</span>
+          </a>
+        </div>
+
+        <!-- Hero Metrics Bar -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h3 data-i18n="hero.stat_networks">10+</h3>
+            <p data-i18n="hero.stat_networks_label">Redes Soportadas</p>
+          </div>
+          <div class="stat-item">
+            <h3 data-i18n="hero.stat_uptime">24/7</h3>
+            <p data-i18n="hero.stat_uptime_label">Vigilante en Segundo Plano</p>
+          </div>
+          <div class="stat-item">
+            <h3 data-i18n="hero.stat_accuracy">100%</h3>
+            <p data-i18n="hero.stat_accuracy_label">Aislamiento por Marca</p>
+          </div>
+          <div class="stat-item">
+            <h3 data-i18n="hero.stat_safety">OAuth 2.0</h3>
+            <p data-i18n="hero.stat_safety_label">Seguridad Certificada</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Phone Frame -->
+      <div class="hero-visual">
+        <div class="floating-badge badge-top">
+          <i class="fa-solid fa-building-user"></i>
+          <span data-i18n="hero.floating_tag_agency">Arquitectura Multi-Marca Real</span>
+        </div>
+        <div class="phone-mockup-frame">
+          <div class="phone-screen">
+            <img src="images/screen-agency.png" alt="SocialHub AI Agency Command Center" id="heroDeviceScreen">
+          </div>
+        </div>
+        <div class="floating-badge badge-bottom">
+          <i class="fa-solid fa-brain"></i>
+          <span data-i18n="hero.floating_tag_ai">Directivas RAG Anti-Alucinación</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Features Grid Section
+       ========================================================================= -->
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge" data-i18n="features.section_badge">Capacidades de Vanguardia</div>
+        <h2 data-i18n="features.title">Diseñado para Creadores, Marcas y Agencias</h2>
+        <p data-i18n="features.subtitle">Una suite de herramientas autónomas creada desde cero para resolver el caos de la gestión de múltiples redes sociales.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="glass-card feature-card">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <h3 data-i18n="features.f1_title">Agente Vigilante 24/7</h3>
+          <p data-i18n="features.f1_desc">Un motor autónomo en segundo plano que monitorea franjas horarias, analiza la cola de aprobación y publica automáticamente sin requerir que abras la app.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="glass-card feature-card">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3 data-i18n="features.f2_title">Aislamiento Multi-Marca Estricto</h3>
+          <p data-i18n="features.f2_desc">Cada marca vive en su propio silo: credenciales independientes, tonos de voz exclusivos y cero mezcla accidental de cuentas o contenidos.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="glass-card feature-card">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+          <h3 data-i18n="features.f3_title">Directivas IA & Contexto RAG</h3>
+          <p data-i18n="features.f3_desc">Alimenta a la IA con los manuales de identidad, tono de voz, audiencia meta y restricciones de cada marca para generar textos impecables y naturales.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="glass-card feature-card">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-calendar-check"></i>
+          </div>
+          <h3 data-i18n="features.f4_title">Esquemas y Campañas Dinámicas</h3>
+          <p data-i18n="features.f4_desc">Estructura estrategias semanales o mensuales por pilares de contenido, frecuencias automáticas y programación inteligente de posts.</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="glass-card feature-card">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-user-check"></i>
+          </div>
+          <h3 data-i18n="features.f5_title">Cola de Aprobación Human-in-the-Loop</h3>
+          <p data-i18n="features.f5_desc">Supervisa, edita o aprueba en un toque las publicaciones antes de que salgan en vivo, o activa el modo automático completo si confías en tu Vigilante.</p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="glass-card feature-card">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-heart-pulse"></i>
+          </div>
+          <h3 data-i18n="features.f6_title">Salud de Cuentas y Diagnóstico</h3>
+          <p data-i18n="features.f6_desc">Monitoreo en tiempo real de tokens de acceso expirados, límites de API de cada red social y resolución de problemas guiada paso a paso.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       AI Vigilante Section (Deep Dive & Live Status Simulator)
+       ========================================================================= -->
+  <section class="vigilante-section" id="vigilante">
+    <div class="container vigilante-container">
+      <div>
+        <div class="section-badge" data-i18n="vigilante.section_badge">Automatización Real</div>
+        <h2 data-i18n="vigilante.title">Conoce al Agente Vigilante de SocialHub</h2>
+        <p data-i18n="vigilante.subtitle">A diferencia de las herramientas convencionales que son simples programadores de reloj, el Vigilante es un agente inteligente que toma decisiones tácticas en tu dispositivo.</p>
+
+        <div class="vigilante-points">
+          <div class="vigilante-point">
+            <div class="point-icon"><i class="fa-solid fa-microchip"></i></div>
+            <div class="point-content">
+              <h4 data-i18n="vigilante.point1_title">Ejecución Nativa con Android WorkManager</h4>
+              <p data-i18n="vigilante.point1_desc">Optimizado para no agotar la batería de tu dispositivo ni ser eliminado por el sistema operativo, garantizando que tus publicaciones salgan a tiempo.</p>
+            </div>
+          </div>
+
+          <div class="vigilante-point">
+            <div class="point-icon"><i class="fa-solid fa-shield-virus"></i></div>
+            <div class="point-content">
+              <h4 data-i18n="vigilante.point2_title">Prevención de Errores y Reintentos Inteligentes</h4>
+              <p data-i18n="vigilante.point2_desc">Si una red social sufre una caída o error de red transitorio, el Vigilante reprograma el intento con retroceso exponencial sin duplicar contenido.</p>
+            </div>
+          </div>
+
+          <div class="vigilante-point">
+            <div class="point-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+            <div class="point-content">
+              <h4 data-i18n="vigilante.point3_title">Sincronización en Tiempo Real en la Nube</h4>
+              <p data-i18n="vigilante.point3_desc">Los estados de publicación, métricas y contadores se sincronizan al instante entre tu base de datos local y Firebase Firestore.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Simulator Card -->
+      <div class="glass-card vigilante-card-preview">
+        <div class="vigilante-header-bar">
+          <div class="status-pill">
+            <div class="status-dot"></div>
+            <span data-i18n="vigilante.status_pill">Vigilante Activo</span>
+          </div>
+          <span style="font-size: 0.85rem; color: var(--text-dim);" data-i18n="vigilante.last_cycle">Último ciclo: Hace instantes</span>
+        </div>
+
+        <div style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-dim); margin-bottom: 8px;" data-i18n="vigilante.next_post_label">
+          Próxima publicación programada
+        </div>
+
+        <div class="vigilante-queue-item">
+          <div style="display: flex; align-items: center; gap: 14px;">
+            <div style="width: 40px; height: 40px; border-radius: 10px; background: rgba(99, 102, 241, 0.2); display: flex; align-items: center; justify-content: center; color: var(--primary-light);">
+              <i class="fa-solid fa-sparkles"></i>
+            </div>
+            <div>
+              <div style="font-weight: 700; color: var(--text-white);" data-i18n="vigilante.sample_post_title">Neurociencia aplicada al éxito diario</div>
+              <div style="font-size: 0.82rem; color: var(--text-dim);" data-i18n="vigilante.sample_post_platform">Instagram & Threads • 15:30</div>
+            </div>
+          </div>
+          <span style="font-size: 0.75rem; background: rgba(16, 185, 129, 0.2); color: #34d399; padding: 4px 10px; border-radius: 99px; font-weight: 700;">En Cola</span>
+        </div>
+
+        <!-- Mini screenshot preview -->
+        <div style="margin-top: 24px; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-glass);">
+          <img src="images/screen-hub.png" alt="SocialHub Connection Center" style="width: 100%; height: auto;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Omnichannel Platforms Showcase
+       ========================================================================= -->
+  <section class="platforms-section" id="platforms">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge" data-i18n="platforms.section_badge">Ecosistema Omnicanal</div>
+        <h2 data-i18n="platforms.title">Publica Donde Está tu Audiencia</h2>
+        <p data-i18n="platforms.subtitle">Conecta tus cuentas oficiales con integraciones nativas y tokens de seguridad autenticados por cada plataforma.</p>
+      </div>
+
+      <div class="platforms-grid">
+        <!-- Facebook -->
+        <div class="glass-card platform-card">
+          <div class="platform-card-header">
+            <div class="platform-icon pi-fb"><i class="fa-brands fa-facebook-f"></i></div>
+            <h4>Facebook</h4>
+          </div>
+          <p data-i18n="platforms.fb_desc">Páginas y grupos oficiales. Publicaciones de texto, enlaces, imágenes de alta resolución y carruseles.</p>
+        </div>
+
+        <!-- Instagram -->
+        <div class="glass-card platform-card">
+          <div class="platform-card-header">
+            <div class="platform-icon pi-ig"><i class="fa-brands fa-instagram"></i></div>
+            <h4>Instagram</h4>
+          </div>
+          <p data-i18n="platforms.ig_desc">Publicaciones en feed, carruseles multimagen y soporte directo para Reels de alto impacto.</p>
+        </div>
+
+        <!-- Threads -->
+        <div class="glass-card platform-card">
+          <div class="platform-card-header">
+            <div class="platform-icon pi-threads"><i class="fa-brands fa-threads"></i></div>
+            <h4>Threads</h4>
+          </div>
+          <p data-i18n="platforms.threads_desc">Hilos automáticos y publicaciones virales en la red social de mayor crecimiento de Meta.</p>
+        </div>
+
+        <!-- Reddit -->
+        <div class="glass-card platform-card">
+          <div class="platform-card-header">
+            <div class="platform-icon pi-reddit"><i class="fa-brands fa-reddit-alien"></i></div>
+            <h4>Reddit</h4>
+          </div>
+          <p data-i18n="platforms.reddit_desc">Publicación contextual en subreddits específicos con formateo markdown y reglas de comunidad.</p>
+        </div>
+
+        <!-- X / Twitter -->
+        <div class="glass-card platform-card">
+          <div class="platform-card-header">
+            <div class="platform-icon pi-x"><i class="fa-brands fa-x-twitter"></i></div>
+            <h4>X / Twitter</h4>
+          </div>
+          <p data-i18n="platforms.x_desc">Tweets, hilos y publicaciones multimedia optimizadas para el algoritmo de X / Twitter.</p>
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="glass-card platform-card">
+          <div class="platform-card-header">
+            <div class="platform-icon pi-li"><i class="fa-brands fa-linkedin-in"></i></div>
+            <h4>LinkedIn</h4>
+          </div>
+          <p data-i18n="platforms.li_desc">Artículos profesionales, actualizaciones de empresa y posts de liderazgo intelectual.</p>
+        </div>
+
+        <!-- YouTube -->
+        <div class="glass-card platform-card">
+          <div class="platform-card-header">
+            <div class="platform-icon pi-yt"><i class="fa-brands fa-youtube"></i></div>
+            <h4>YouTube</h4>
+          </div>
+          <p data-i18n="platforms.yt_desc">Publicación de YouTube Shorts y videos largos con títulos optimizados y etiquetas SEO.</p>
+        </div>
+
+        <!-- TikTok -->
+        <div class="glass-card platform-card">
+          <div class="platform-card-header">
+            <div class="platform-icon pi-tt"><i class="fa-brands fa-tiktok"></i></div>
+            <h4>TikTok</h4>
+          </div>
+          <p data-i18n="platforms.tt_desc">Videos cortos sincronizados automáticamente con el feed de TikTok for Creators.</p>
+        </div>
+
+        <!-- Pinterest -->
+        <div class="glass-card platform-card">
+          <div class="platform-card-header">
+            <div class="platform-icon pi-pin"><i class="fa-brands fa-pinterest-p"></i></div>
+            <h4>Pinterest</h4>
+          </div>
+          <p data-i18n="platforms.pin_desc">Tableros, pines visuales y enlaces directos de tráfico a tu tienda o sitio web.</p>
+        </div>
+
+        <!-- Telegram -->
+        <div class="glass-card platform-card">
+          <div class="platform-card-header">
+            <div class="platform-icon pi-tg"><i class="fa-brands fa-telegram"></i></div>
+            <h4>Telegram</h4>
+          </div>
+          <p data-i18n="platforms.tg_desc">Transmisión automática de noticias y avisos a canales y grupos de Telegram.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Agency Multi-Brand Showcase Section
+       ========================================================================= -->
+  <section class="agency-section" id="agency">
+    <div class="container agency-grid">
+      <div class="agency-visual">
+        <img src="images/screen-dashboard.png" alt="SocialHub AI Multi-Brand Client Portfolio">
+      </div>
+
+      <div class="agency-content">
+        <div class="section-badge" data-i18n="agency.section_badge">Para Profesionales</div>
+        <h2 data-i18n="agency.title">Centro de Control para Agencias</h2>
+        <p data-i18n="agency.subtitle">Gestiona 10, 20 o 50 marcas de clientes sin cambiar de sesión ni arriesgarte a publicar en la cuenta equivocada.</p>
+
+        <div class="agency-benefits">
+          <div class="agency-benefit">
+            <i class="fa-solid fa-cubes"></i>
+            <div>
+              <h4 data-i18n="agency.benefit1_title" style="color: var(--text-white); margin-bottom: 4px;">Portafolio Unificado de Clientes</h4>
+              <p data-i18n="agency.benefit1_desc" style="color: var(--text-muted); font-size: 0.95rem;">Una vista global con el pulso diario de cada cliente: publicaciones por aprobar, programadas para hoy y alertas de salud.</p>
+            </div>
+          </div>
+
+          <div class="agency-benefit">
+            <i class="fa-solid fa-arrows-rotate"></i>
+            <div>
+              <h4 data-i18n="agency.benefit2_title" style="color: var(--text-white); margin-bottom: 4px;">Cambio de Contexto con un Clic</h4>
+              <p data-i18n="agency.benefit2_desc" style="color: var(--text-muted); font-size: 0.95rem;">Salta de Marca A a Marca B al instante; toda la aplicación ajusta sus redes, directivas y esquemas en milisegundos.</p>
+            </div>
+          </div>
+
+          <div class="agency-benefit">
+            <i class="fa-solid fa-chart-line"></i>
+            <div>
+              <h4 data-i18n="agency.benefit3_title" style="color: var(--text-white); margin-bottom: 4px;">Límites Claros y Escalabilidad</h4>
+              <p data-i18n="agency.benefit3_desc" style="color: var(--text-muted); font-size: 0.95rem;">Asigna marcas según el plan contratado y escala tu agencia sin costos ocultos de servidores costosos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Pricing Section
+       ========================================================================= -->
+  <section class="pricing-section" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge" data-i18n="pricing.section_badge">Inversión Inteligente</div>
+        <h2 data-i18n="pricing.title">Planes Claros, sin Sorpresas</h2>
+        <p data-i18n="pricing.subtitle">Elige la capacidad que necesitas hoy y escala conforme crezca tu presencia en redes sociales.</p>
+      </div>
+
+      <!-- Pricing Filter Tabs -->
+      <div class="pricing-tabs-wrapper">
+        <div class="pricing-tabs" role="tablist">
+          <button class="pricing-tab-btn active" data-filter="all" data-i18n="pricing.tab_all">Todos los Planes</button>
+          <button class="pricing-tab-btn" data-filter="creators" data-i18n="pricing.tab_creators">👤 Creadores & Marcas (1-2 Marcas)</button>
+          <button class="pricing-tab-btn" data-filter="agencies" data-i18n="pricing.tab_agencies">🏢 Agencias & Escala (Multi-Marca)</button>
+        </div>
+      </div>
+
+      <!-- Group 1: Creators & Solo Brands (1-2 Brands) -->
+      <div class="pricing-group" id="pricingCreatorsGroup">
+        <div class="pricing-group-header">
+          <h3 class="pricing-group-title"><i class="fa-solid fa-user-astronaut"></i> <span data-i18n="pricing.group_creators">Para Creadores y Marcas Personales</span></h3>
+        </div>
+
+        <div class="pricing-grid pricing-grid-3">
+          <!-- Plan 1: Free Trial ($0 / 7 Días) -->
+          <div class="glass-card pricing-card">
+            <div class="pricing-card-badge" style="background: linear-gradient(135deg, #3b82f6, #06b6d4);" data-i18n="pricing.plan_free_badge">7 DÍAS GRATIS</div>
+            <div>
+              <div class="pricing-header">
+                <h3 data-i18n="pricing.plan_free_name">Free Trial</h3>
+                <p data-i18n="pricing.plan_free_desc">Prueba la potencia de SocialHub sin costo ni tarjeta de crédito.</p>
+              </div>
+              <div class="pricing-price">
+                <span class="amount" data-i18n="pricing.plan_free_price">$0</span>
+                <span class="period" data-i18n="pricing.plan_free_period">/ 7 días</span>
+              </div>
+              <ul class="pricing-features">
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_free_f1">1 Marca activa</span></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_free_f2">1 Red Social vinculada</span></li>
+                <li><i class="fa-solid fa-bolt" style="color:#eab308;"></i> <strong><span data-i18n="pricing.plan_free_f3">10 Créditos de IA para probar</span></strong></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_free_f4">1 Campaña activa</span></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_free_f5">Modelo IA Básico (Gemini Flash)</span></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_free_f6">Vigilante autónomo estándar</span></li>
+              </ul>
+            </div>
+            <a href="#download" class="btn btn-secondary" style="width: 100%;" data-i18n="pricing.plan_free_cta">Probar 7 Días Gratis</a>
+          </div>
+
+          <!-- Plan 2: Starter ($39 / mes) -->
+          <div class="glass-card pricing-card">
+            <div class="pricing-card-badge" style="background: linear-gradient(135deg, #10b981, #3b82f6);" data-i18n="pricing.plan_starter_badge">INICIO RÁPIDO</div>
+            <div>
+              <div class="pricing-header">
+                <h3 data-i18n="pricing.plan_starter_name">Starter</h3>
+                <p data-i18n="pricing.plan_starter_desc">Ideal para creadores y marcas que publican en sus canales principales.</p>
+              </div>
+              <div class="pricing-price">
+                <span class="amount" data-i18n="pricing.plan_starter_price">$39</span>
+                <span class="period" data-i18n="pricing.plan_starter_period">/ mes</span>
+              </div>
+              <ul class="pricing-features">
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_starter_f1">1 Marca activa</span></li>
+                <li><i class="fa-solid fa-check"></i> <strong><span data-i18n="pricing.plan_starter_f2">Hasta 4 Redes Sociales vinculadas</span></strong></li>
+                <li><i class="fa-solid fa-bolt" style="color:#eab308;"></i> <strong><span data-i18n="pricing.plan_starter_f3">250 Créditos de IA mensuales</span></strong></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_starter_f4">2 Campañas simultáneas</span></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_starter_f5">Modelo IA Básico (Gemini 2.5 Flash)</span></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_starter_f6">Vigilante de publicación 24/7</span></li>
+              </ul>
+            </div>
+            <a href="#download" class="btn btn-secondary" style="width: 100%;" data-i18n="pricing.plan_starter_cta">Elegir Plan Starter</a>
+          </div>
+
+          <!-- Plan 3: Pro ($59 / mes) Highlighted -->
+          <div class="glass-card pricing-card highlighted">
+            <div class="pricing-card-badge" data-i18n="pricing.plan_pro_badge">MÁS POPULAR</div>
+            <div>
+              <div class="pricing-header">
+                <h3 data-i18n="pricing.plan_pro_name">Pro</h3>
+                <p data-i18n="pricing.plan_pro_desc">Domina todos los canales con IA avanzada, RAG y automatización total.</p>
+              </div>
+              <div class="pricing-price">
+                <span class="amount" data-i18n="pricing.plan_pro_price">$59</span>
+                <span class="period" data-i18n="pricing.plan_pro_period">/ mes</span>
+              </div>
+              <ul class="pricing-features">
+                <li><i class="fa-solid fa-check"></i> <strong><span data-i18n="pricing.plan_pro_f1">Hasta 2 Marcas activas</span></strong></li>
+                <li><i class="fa-solid fa-check"></i> <strong><span data-i18n="pricing.plan_pro_f2">Redes Sociales Ilimitadas (10+ canales)</span></strong></li>
+                <li><i class="fa-solid fa-bolt" style="color:#eab308;"></i> <strong><span data-i18n="pricing.plan_pro_f3">600 Créditos de IA mensuales</span></strong></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_pro_f4">Hasta 5 Campañas simultáneas</span></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_pro_f5">Modelo IA Avanzado con Directivas RAG</span></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_pro_f6">Vigilante de alta frecuencia 24/7</span></li>
+              </ul>
+            </div>
+            <a href="#download" class="btn btn-primary" style="width: 100%;" data-i18n="pricing.plan_pro_cta">Elegir Plan Pro</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Group 2: Agencies & Scale (Multi-Brand) -->
+      <div class="pricing-group" id="pricingAgenciesGroup" style="margin-top: 48px;">
+        <div class="pricing-group-header">
+          <h3 class="pricing-group-title"><i class="fa-solid fa-building-columns"></i> <span data-i18n="pricing.group_agencies">Para Agencias y Gestores Multi-Marca</span></h3>
+        </div>
+
+        <div class="pricing-grid pricing-grid-2">
+          <!-- Plan 4: Agency Scale ($159 / mes) -->
+          <div class="glass-card pricing-card">
+            <div class="pricing-card-badge" style="background: linear-gradient(135deg, #8b5cf6, #ec4899);" data-i18n="pricing.plan_scale_badge">AGENCIA EN CRECIMIENTO</div>
+            <div>
+              <div class="pricing-header">
+                <h3 data-i18n="pricing.plan_scale_name">Agency Scale</h3>
+                <p data-i18n="pricing.plan_scale_desc">Gestiona múltiples clientes y marcas con total aislamiento de datos.</p>
+              </div>
+              <div class="pricing-price">
+                <span class="amount" data-i18n="pricing.plan_scale_price">$159</span>
+                <span class="period" data-i18n="pricing.plan_scale_period">/ mes</span>
+              </div>
+              <ul class="pricing-features">
+                <li><i class="fa-solid fa-check"></i> <strong><span data-i18n="pricing.plan_scale_f1">Hasta 4 Marcas / Clientes activos</span></strong></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_scale_f2">Redes Sociales Ilimitadas por marca</span></li>
+                <li><i class="fa-solid fa-bolt" style="color:#eab308;"></i> <strong><span data-i18n="pricing.plan_scale_f3">3,000 Créditos de IA mensuales</span></strong></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_scale_f4">Hasta 20 Campañas simultáneas</span></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_scale_f5">Workflows con Auto-Aprobación autónoma</span></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_scale_f6">Centro de Control y Portafolio de Clientes</span></li>
+              </ul>
+            </div>
+            <a href="#download" class="btn btn-secondary" style="width: 100%;" data-i18n="pricing.plan_scale_cta">Elegir Agency Scale</a>
+          </div>
+
+          <!-- Plan 5: Agency Elite ($300 / mes) -->
+          <div class="glass-card pricing-card">
+            <div class="pricing-card-badge" style="background: linear-gradient(135deg, #f59e0b, #ef4444);" data-i18n="pricing.plan_elite_badge">MÁXIMA POTENCIA</div>
+            <div>
+              <div class="pricing-header">
+                <h3 data-i18n="pricing.plan_elite_name">Agency Elite</h3>
+                <p data-i18n="pricing.plan_elite_desc">La suite definitiva para agencias consolidadas y alto volumen de contenido.</p>
+              </div>
+              <div class="pricing-price">
+                <span class="amount" data-i18n="pricing.plan_elite_price">$300</span>
+                <span class="period" data-i18n="pricing.plan_elite_period">/ mes</span>
+              </div>
+              <ul class="pricing-features">
+                <li><i class="fa-solid fa-check"></i> <strong><span data-i18n="pricing.plan_elite_f1">Hasta 20 Marcas / Clientes activos</span></strong></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_elite_f2">Redes Sociales Ilimitadas por marca</span></li>
+                <li><i class="fa-solid fa-bolt" style="color:#eab308;"></i> <strong><span data-i18n="pricing.plan_elite_f3">10,000 Créditos de IA mensuales</span></strong></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_elite_f4">Campañas Ilimitadas (hasta 50)</span></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_elite_f5">Modelos Top Gemini con Prioridad en Cola</span></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_elite_f6">Soporte VIP Prioritario 24/7</span></li>
+              </ul>
+            </div>
+            <a href="#download" class="btn btn-secondary" style="width: 100%;" data-i18n="pricing.plan_elite_cta">Elegir Agency Elite</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FAQ Section (Accordion)
+       ========================================================================= -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge" data-i18n="faq.section_badge">Dudas Frecuentes</div>
+        <h2 data-i18n="faq.title">Preguntas Frecuentes</h2>
+        <p data-i18n="faq.subtitle">¿Tienes preguntas sobre cómo funciona SocialHub AI? Aquí te respondemos.</p>
+      </div>
+
+      <div class="faq-container">
+        <!-- Q1 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq.q1">¿SocialHub AI almacena mis contraseñas de redes sociales?</span>
+            <i class="fa-solid fa-chevron-down faq-chevron"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-i18n="faq.a1">
+              No, en lo absoluto. SocialHub AI utiliza el estándar oficial OAuth 2.0 aprobado por Meta, Reddit, Google y LinkedIn. La autenticación se realiza en las páginas oficiales de cada plataforma y la app solo almacena tokens criptográficos seguros protegidos en tu dispositivo.
+            </div>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq.q2">¿Cómo funciona el Agente Vigilante si mi teléfono se apaga o reinicia?</span>
+            <i class="fa-solid fa-chevron-down faq-chevron"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-i18n="faq.a2">
+              El Vigilante utiliza WorkManager nativo de Android. Tan pronto como el dispositivo se enciende o recupera conectividad a Internet, el sistema reanuda las tareas pendientes y sincroniza el estado con la nube automáticamente.
+            </div>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq.q3">¿Qué sucede si tengo varias marcas? ¿Se pueden mezclar las cuentas?</span>
+            <i class="fa-solid fa-chevron-down faq-chevron"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-i18n="faq.a3">
+              No. SocialHub AI cuenta con aislamiento estricto en base de datos. Una cuenta de red social solo puede pertenecer a una marca a la vez. Si intentas conectar una cuenta ya en uso, el sistema te alertará para proteger la reputación de tus clientes.
+            </div>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq.q4">¿La Inteligencia Artificial inventará datos o alucinará sobre mi negocio?</span>
+            <i class="fa-solid fa-chevron-down faq-chevron"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-i18n="faq.a4">
+              SocialHub AI integra arquitectura RAG (Retrieval-Augmented Generation). Antes de redactar cualquier post, la IA consulta tus 'AI Directives' y los documentos de identidad de marca que configuraste, asegurando coherencia total con tus productos y valores.
+            </div>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq.q5">¿Dónde puedo descargar la aplicación?</span>
+            <i class="fa-solid fa-chevron-down faq-chevron"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-i18n="faq.a5">
+              SocialHub AI está disponible en Google Play Store para dispositivos Android. También puedes solicitar acceso directo a la APK de desarrollo desde nuestro canal oficial de soporte de EJS Studios.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CTA Banner Section
+       ========================================================================= -->
+  <section class="cta-section" id="download">
+    <div class="container">
+      <div class="cta-banner">
+        <div class="section-badge" style="background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.2); color: white;" data-i18n="cta_banner.badge">
+          Comienza Hoy Mismo
+        </div>
+        <h2 data-i18n="cta_banner.title">Lleva la Gestión de Redes Sociales al Próximo Nivel</h2>
+        <p data-i18n="cta_banner.subtitle">Deja atrás las planillas complejas y los programadores manuales. Empieza gratis con SocialHub AI.</p>
+        <div class="cta-buttons">
+          <a href="https://play.google.com/store/apps/details?id=com.ejsstudios.socialhub" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="btnDownloadGooglePlay">
+            <i class="fa-brands fa-google-play"></i>
+            <span data-i18n="cta_banner.btn_download">Descargar SocialHub AI</span>
+          </a>
+          <a href="mailto:contacto@ejsstudios.com" class="btn btn-secondary" id="btnContactSupport">
+            <i class="fa-solid fa-envelope"></i>
+            <span data-i18n="cta_banner.btn_support">Contactar a EJS Studios</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Footer
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+            <img src="images/logo.webp" alt="SocialHub AI" style="width: 32px; height: 32px; border-radius: 8px;">
+            <h3>SocialHub <span class="gradient-text">AI</span></h3>
+          </div>
+          <p data-i18n="footer.tagline">SocialHub AI es una solución de automatización inteligente desarrollada con pasión por EJS Studios.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.col_product">Producto</h4>
+          <ul>
+            <li><a href="#features" data-i18n="nav.features">Características</a></li>
+            <li><a href="#platforms" data-i18n="nav.platforms">Plataformas</a></li>
+            <li><a href="#vigilante" data-i18n="nav.vigilante">Vigilante IA</a></li>
+            <li><a href="#agency" data-i18n="nav.agency">Modo Agencia</a></li>
+            <li><a href="#pricing" data-i18n="nav.pricing">Precios</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.col_legal">Legal y Privacidad</h4>
+          <ul>
+            <li><a href="https://ejsstudios.com/socialhub/privacy.html" target="_blank" data-i18n="footer.privacy">Política de Privacidad</a></li>
+            <li><a href="https://ejsstudios.com/socialhub/delete-data.html" target="_blank" data-i18n="footer.delete_data">Borrado de Datos</a></li>
+            <li><a href="https://ejsstudios.com/socialhub/deauthorize.html" target="_blank" data-i18n="footer.auth_callback">Desautorización Meta</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.col_contact">EJS Studios</h4>
+          <ul>
+            <li><a href="https://ejsstudios.com" target="_blank">ejsstudios.com</a></li>
+            <li><a href="https://astrochart.ejsstudios.com" target="_blank">AstroChart</a></li>
+            <li><a href="mailto:contacto@ejsstudios.com" data-i18n="footer.contact_mail">contacto@ejsstudios.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div data-i18n="footer.copyright">© 2026 EJS Studios. Todos los derechos reservados.</div>
+        <div style="display: flex; gap: 18px;">
+          <a href="https://github.com/Edmyjose" target="_blank" rel="noopener noreferrer" style="color: var(--text-dim);"><i class="fa-brands fa-github"></i></a>
+          <a href="https://ejsstudios.com" target="_blank" rel="noopener noreferrer" style="color: var(--text-dim);"><i class="fa-solid fa-globe"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: Centralized translations first, then interactive logic -->
+  <script src="translations.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
