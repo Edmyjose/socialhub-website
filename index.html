@@ -1366,6 +1366,272 @@
           </div>
         </div>
       </div>
+
+      <!-- Expandable Comparison Matrix Section -->
+      <div class="pricing-compare-section" id="pricingCompareSection">
+        <div class="pricing-compare-trigger-wrap">
+          <button type="button" class="pricing-compare-toggle-btn" id="pricingCompareToggle" aria-expanded="false" aria-controls="pricingCompareContent">
+            <div class="compare-toggle-left">
+              <span class="compare-toggle-icon">
+                <i class="fa-solid fa-table-list"></i>
+              </span>
+              <div class="compare-toggle-text">
+                <span class="compare-toggle-title" data-i18n="pricing.compare_toggle_title">Comparar todos los planes y características detalladas</span>
+                <span class="compare-toggle-desc" data-i18n="pricing.compare_toggle_desc">Revisa límites de marcas, créditos de IA, redes vinculadas y funciones avanzadas cara a cara</span>
+              </div>
+            </div>
+            <div class="compare-toggle-right">
+              <span class="compare-toggle-badge" data-i18n="pricing.compare_toggle_badge">5 PLANES</span>
+              <span class="compare-toggle-action-label" data-i18n="pricing.compare_toggle_show">Ver Matriz Comparativa Completa</span>
+              <span class="compare-toggle-chevron">
+                <i class="fa-solid fa-chevron-down"></i>
+              </span>
+            </div>
+          </button>
+        </div>
+
+        <div class="pricing-compare-collapse" id="pricingCompareContent">
+          <div class="pricing-compare-inner">
+            <div class="compare-table-card glass-card">
+              <div class="compare-table-responsive">
+                <table class="compare-table">
+                  <thead>
+                    <tr>
+                      <th class="col-feature" scope="col" data-i18n="pricing.compare_col_feature">Característica / Capacidad</th>
+                      <th class="col-plan" scope="col">
+                        <div class="plan-th-name" data-i18n="pricing.compare_col_free">Free Trial</div>
+                        <div class="plan-th-price" data-i18n="pricing.compare_col_free_sub">$0 / 7 días</div>
+                      </th>
+                      <th class="col-plan" scope="col">
+                        <div class="plan-th-name" data-i18n="pricing.compare_col_starter">Starter</div>
+                        <div class="plan-th-price" data-i18n="pricing.compare_col_starter_sub">$39 / mes</div>
+                      </th>
+                      <th class="col-plan col-pro" scope="col">
+                        <div class="plan-popular-pill" data-i18n="pricing.compare_popular_tag">MÁS POPULAR</div>
+                        <div class="plan-th-name" data-i18n="pricing.compare_col_pro">Pro</div>
+                        <div class="plan-th-price" data-i18n="pricing.compare_col_pro_sub">$59 / mes</div>
+                      </th>
+                      <th class="col-plan" scope="col">
+                        <div class="plan-th-name" data-i18n="pricing.compare_col_scale">Agency Scale</div>
+                        <div class="plan-th-price" data-i18n="pricing.compare_col_scale_sub">$159 / mes</div>
+                      </th>
+                      <th class="col-plan" scope="col">
+                        <div class="plan-th-name" data-i18n="pricing.compare_col_elite">Agency Elite</div>
+                        <div class="plan-th-price" data-i18n="pricing.compare_col_elite_sub">$300 / mes</div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Category 1: Capacity & Brands -->
+                    <tr class="table-group-header">
+                      <td colspan="6">
+                        <div class="group-header-inner">
+                          <i class="fa-solid fa-users-gear"></i>
+                          <span data-i18n="pricing.compare_group_capacity">Capacidad, Marcas y Canales</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_brands">Marcas / Clientes activos</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_brands_free">1 Marca</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_brands_starter">1 Marca</td>
+                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_brands_pro">Hasta 2 Marcas</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_brands_scale">Hasta 4 Clientes</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_brands_elite">Hasta 20 Clientes</td>
+                    </tr>
+                    <tr>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_networks">Redes sociales por marca</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_networks_free">1 Red Social</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_networks_starter">Hasta 4 Redes</td>
+                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_networks_pro">Ilimitadas (6 Redes)</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_networks_scale">Ilimitadas (6 Redes)</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_networks_elite">Ilimitadas (6 Redes)</td>
+                    </tr>
+                    <tr>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_campaigns">Campañas simultáneas</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_campaigns_free">1 Campaña</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_campaigns_starter">2 Campañas</td>
+                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_campaigns_pro">Hasta 5 Campañas</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_campaigns_scale">Hasta 20 Campañas</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_campaigns_elite">Ilimitadas (hasta 50)</td>
+                    </tr>
+                    <tr>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_platforms">Redes oficiales soportadas (Meta, IG, Threads, LinkedIn, X, Reddit)</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_platforms_free">1 canal oficial</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_platforms_starter">4 canales oficiales</td>
+                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_platforms_pro">Todos los 6 canales</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_platforms_scale">Todos los 6 canales</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_platforms_elite">Todos los 6 canales</td>
+                    </tr>
+
+                    <!-- Category 2: AI & Content Creation -->
+                    <tr class="table-group-header">
+                      <td colspan="6">
+                        <div class="group-header-inner">
+                          <i class="fa-solid fa-wand-magic-sparkles"></i>
+                          <span data-i18n="pricing.compare_group_ai">Inteligencia Artificial y Creación de Contenido</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_credits">Créditos de IA mensuales</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_credits_free">10 Créditos (prueba)</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_credits_starter">250 Créditos / mes</td>
+                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_credits_pro">600 Créditos / mes</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_credits_scale">3,000 Créditos / mes</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_credits_elite">10,000 Créditos / mes</td>
+                    </tr>
+                    <tr>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_aimodel">Nivel de Modelo IA</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_aimodel_free">Básico</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_aimodel_starter">Rápido de Producción</td>
+                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_aimodel_pro">Avanzado Multimodal</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_aimodel_scale">Avanzado + Auto-Prompt</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_aimodel_elite">Ultra Capacidad & Baja Latencia</td>
+                    </tr>
+                    <tr>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_brandmemory">Memoria de Marca (Reglas de voz, documentos de marca)</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_brandmemory_free">Básica</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_brandmemory_starter">Estándar</td>
+                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_brandmemory_pro">Completa con Voz de Marca</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_brandmemory_scale">Avanzada e Independiente</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_brandmemory_elite">Avanzada con Biblioteca Extendida</td>
+                    </tr>
+                    <tr>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_omnichannel">Generación Omnicanal (1 post adaptado a cada red con IA)</td>
+                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                      <td class="cell-val col-pro"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                    </tr>
+                    <tr>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_duallang">Arquitectura Doble Idioma (App en tu idioma, posts en idioma del cliente)</td>
+                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                      <td class="cell-val col-pro"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                    </tr>
+
+                    <!-- Category 3: Automation & Vigilante -->
+                    <tr class="table-group-header">
+                      <td colspan="6">
+                        <div class="group-header-inner">
+                          <i class="fa-solid fa-shield-halved"></i>
+                          <span data-i18n="pricing.compare_group_auto">Automatización, Vigilante y Ejecución</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_vigilante">Agente Vigilante 24/7</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_vigilante_free">Estándar</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_vigilante_starter">Continuo 24/7</td>
+                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_vigilante_pro">Alta Frecuencia 24/7</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_vigilante_scale">Alta Concurrencia</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_vigilante_elite">Máxima Concurrencia Dedicada</td>
+                    </tr>
+                    <tr>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_push_approval">Aprobación exprés con 1 toque en notificación móvil</td>
+                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                      <td class="cell-val col-pro"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                    </tr>
+                    <tr>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_auto_approval">Workflows con Auto-Aprobación autónoma</td>
+                      <td class="cell-val"><i class="fa-solid fa-minus check-no"></i></td>
+                      <td class="cell-val"><i class="fa-solid fa-minus check-no"></i></td>
+                      <td class="cell-val col-pro"><i class="fa-solid fa-minus check-no"></i></td>
+                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                    </tr>
+                    <tr>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_failed_inbox">Bandeja de publicaciones fallidas y reintento inteligente</td>
+                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                      <td class="cell-val col-pro"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                    </tr>
+                    <tr>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_offline">Arquitectura Offline-First (Modo vuelo sin conexión)</td>
+                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                      <td class="cell-val col-pro"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                    </tr>
+                    <tr>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_multidevice">Continuidad y Sesión Simultánea Multi-Dispositivo</td>
+                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                      <td class="cell-val col-pro"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                    </tr>
+
+                    <!-- Category 4: Workspaces & Support -->
+                    <tr class="table-group-header">
+                      <td colspan="6">
+                        <div class="group-header-inner">
+                          <i class="fa-solid fa-building-user"></i>
+                          <span data-i18n="pricing.compare_group_support">Espacios de Trabajo, Portafolio y Soporte</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_workspaces">Espacios de trabajo blindados e independientes</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_workspaces_free">1 Espacio</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_workspaces_starter">1 Espacio</td>
+                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_workspaces_pro">2 Espacios</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_workspaces_scale">4 Espacios aislados</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_workspaces_elite">20 Espacios aislados</td>
+                    </tr>
+                    <tr>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_portfolio">Centro de Control y Portafolio de Clientes</td>
+                      <td class="cell-val"><i class="fa-solid fa-minus check-no"></i></td>
+                      <td class="cell-val"><i class="fa-solid fa-minus check-no"></i></td>
+                      <td class="cell-val col-pro"><i class="fa-solid fa-minus check-no"></i></td>
+                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                    </tr>
+                    <tr>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_support">Nivel de Soporte y Acompañamiento</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_support_free">Comunidad</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_support_starter">Email Estándar</td>
+                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_support_pro">Email Prioritario</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_support_scale">Canal Prioritario VIP</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_support_elite">Soporte VIP 24/7 Dedicado</td>
+                    </tr>
+
+                    <!-- CTA Row -->
+                    <tr class="table-cta-row">
+                      <td class="cell-feature"></td>
+                      <td class="cell-val">
+                        <a href="#download" class="btn btn-secondary btn-sm" data-i18n="pricing.compare_cta_free">Probar Gratis</a>
+                      </td>
+                      <td class="cell-val">
+                        <a href="#download" class="btn btn-secondary btn-sm" data-i18n="pricing.compare_cta_starter">Elegir Starter</a>
+                      </td>
+                      <td class="cell-val col-pro">
+                        <a href="#download" class="btn btn-primary btn-sm" data-i18n="pricing.compare_cta_pro">Elegir Pro</a>
+                      </td>
+                      <td class="cell-val">
+                        <a href="#download" class="btn btn-secondary btn-sm" data-i18n="pricing.compare_cta_scale">Elegir Scale</a>
+                      </td>
+                      <td class="cell-val">
+                        <a href="#download" class="btn btn-secondary btn-sm" data-i18n="pricing.compare_cta_elite">Elegir Elite</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 

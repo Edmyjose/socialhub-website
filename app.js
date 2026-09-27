@@ -359,6 +359,45 @@
   }
 
   /**
+   * Pricing Comparison Table Toggle
+   */
+  function initPricingCompare() {
+    const toggleBtn = document.getElementById('pricingCompareToggle');
+    const collapseContent = document.getElementById('pricingCompareContent');
+    const actionLabel = toggleBtn ? toggleBtn.querySelector('.compare-toggle-action-label') : null;
+
+    if (!toggleBtn || !collapseContent) return;
+
+    toggleBtn.addEventListener('click', () => {
+      const isExpanded = collapseContent.classList.contains('expanded');
+
+      if (isExpanded) {
+        collapseContent.classList.remove('expanded');
+        toggleBtn.classList.remove('active');
+        toggleBtn.setAttribute('aria-expanded', 'false');
+        if (actionLabel) {
+          actionLabel.setAttribute('data-i18n', 'pricing.compare_toggle_show');
+          const currentLang = document.documentElement.lang || 'es';
+          if (window.TRANSLATIONS && window.TRANSLATIONS[currentLang] && window.TRANSLATIONS[currentLang].pricing) {
+            actionLabel.textContent = window.TRANSLATIONS[currentLang].pricing.compare_toggle_show;
+          }
+        }
+      } else {
+        collapseContent.classList.add('expanded');
+        toggleBtn.classList.add('active');
+        toggleBtn.setAttribute('aria-expanded', 'true');
+        if (actionLabel) {
+          actionLabel.setAttribute('data-i18n', 'pricing.compare_toggle_hide');
+          const currentLang = document.documentElement.lang || 'es';
+          if (window.TRANSLATIONS && window.TRANSLATIONS[currentLang] && window.TRANSLATIONS[currentLang].pricing) {
+            actionLabel.textContent = window.TRANSLATIONS[currentLang].pricing.compare_toggle_hide;
+          }
+        }
+      }
+    });
+  }
+
+  /**
    * Initialize Everything on DOM Load
    */
   document.addEventListener('DOMContentLoaded', () => {
@@ -367,6 +406,7 @@
     initLanguageDropdown();
     initFaqAccordion();
     initPricingTabs();
+    initPricingCompare();
     initDeviceTabs();
 
     // Detect and apply initial language (without altering initial URL unless user switches)
@@ -374,3 +414,4 @@
     applyLanguage(initialLang, false);
   });
 })();
+
