@@ -1,5 +1,5 @@
 /**
- * SocialHub AI - Interactive Logic & Multi-Language Engine
+ * HubSocial AI - Interactive Logic & Multi-Language Engine
  * Pure Vanilla JS, zero dependencies, lightning fast.
  */
 

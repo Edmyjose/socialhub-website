@@ -2454,6 +2454,38 @@ h1, h2, h3, h4, .font-heading {
   letter-spacing: 0.03em;
 }
 
+/* Real Mockup Image Container */
+.mockup-image-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: rgba(10, 6, 24, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+.device-mockup-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform var(--transition-normal), filter var(--transition-normal);
+  filter: contrast(1.03) brightness(1.02);
+}
+
+.mockup-slot-card:hover .device-mockup-img {
+  transform: scale(1.02);
+}
+
+.mockup-live-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.06) 0%, transparent 75%);
+}
+
 /* Canvas Area */
 .mockup-canvas-area {
   position: relative;

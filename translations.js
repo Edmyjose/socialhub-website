@@ -10,7 +10,7 @@
 window.TRANSLATIONS = {
   es: {
     meta: {
-      title: "HubSocial AI ✨ Tu Suite Multi-Marca de Automatización de Redes con IA",
+      title: "HubSocial AI",
       description: "Administra múltiples marcas, genera contenido omnicanal con IA con Memoria de Marca y publica en Facebook, Instagram, Threads, LinkedIn, X y Reddit con un Agente Vigilante autónomo 24/7."
     },
     nav: {
@@ -191,7 +191,7 @@ window.TRANSLATIONS = {
       chromebook_f1: "Riel lateral de navegación (NavigationRail) optimizado para ratón y teclado físico.",
       chromebook_f2: "Atajos rápidos de edición y navegación fluida entre marcas y calendarios.",
       chromebook_f3: "Ventanas redimensionables y multitarea libre en ChromeOS y escritorios compatibles.",
-      chromebook_aspect_tag: "Formato Recomendado: 16:9 Panorámico (1920 × 1080 px)",
+      chromebook_aspect_tag: "Modo Desktop • 16:9 Panorámico",
       chromebook_ratio_info: "Relación 16:9 Panorámico • 1920 × 1080 px",
       chromebook_spec_title: "Instrucciones de Generación de Imagen:",
       chromebook_screenshot_hint: "Abre HubSocial AI en tu Chromebook o notebook (≥ 840dp) y toma una captura de pantalla completa mostrando el patrón Master-Detail: lista de borradores pendientes a la izquierda y el editor con IA + Memoria de Marca y riel lateral a la derecha.",
@@ -205,7 +205,7 @@ window.TRANSLATIONS = {
       tablet_f1: "Grillas dinámicas adaptativas de 2 columnas para monitoreo simultáneo de clientes.",
       tablet_f2: "Modo Flex: apoya tu teléfono plegable doblado en la mesa para revisar con manos libres.",
       tablet_f3: "Split Dashboard: cola editorial y sugerencias estratégicas de IA en simultáneo.",
-      tablet_aspect_tag: "Formato Recomendado: 4:3 Pantalla Amplia (1600 × 1200 px)",
+      tablet_aspect_tag: "Pantalla Amplia • 4:3 Adaptativo",
       tablet_ratio_info: "Relación 4:3 Pantalla Amplia • 1600 × 1200 px",
       tablet_spec_title: "Instrucciones de Generación de Imagen:",
       tablet_screenshot_hint: "Toma una captura horizontal en tu tablet Android o teléfono plegable desplegado (≥ 600dp) mostrando el BrandPulseGrid de marcas en el encabezado y las tarjetas de canales de clientes en 2 columnas.",
@@ -219,7 +219,7 @@ window.TRANSLATIONS = {
       phone_f1: "Aprobación exprés con 1 solo toque directamente desde notificaciones push.",
       phone_f2: "Arquitectura Offline-First: redacta y programa sin señal; sincroniza solo al reconectar.",
       phone_f3: "Batería blindada: el Agente Vigilante despierta solo a la hora exacta gracias a WorkManager.",
-      phone_aspect_tag: "Formato Recomendado: 9:16 Vertical Móvil (1080 × 1920 px)",
+      phone_aspect_tag: "Móvil Ágil • Navegación a 1 Mano",
       phone_ratio_info: "Relación 9:16 Vertical Móvil • 1080 × 1920 px",
       phone_spec_title: "Instrucciones de Generación de Imagen:",
       phone_screenshot_hint: "Toma una captura vertical en tu smartphone Android dentro de la vista de detalle de publicación, mostrando el copy generado por IA, las etiquetas omnicanal y el botón de acción rápida 'Aprobar' al alcance del pulgar.",
@@ -370,7 +370,7 @@ window.TRANSLATIONS = {
 
   en: {
     meta: {
-      title: "HubSocial AI ✨ Your Autonomous Multi-Brand AI Social Media Suite",
+      title: "HubSocial AI",
       description: "Manage multiple brands, generate omnichannel content with context-aware Brand Memory AI, and publish to Facebook, Instagram, Threads, LinkedIn, X, and Reddit with an autonomous 24/7 Vigilante Agent."
     },
     nav: {
@@ -551,7 +551,7 @@ window.TRANSLATIONS = {
       chromebook_f1: "Side Navigation Rail engineered for fast mouse and physical keyboard workflows.",
       chromebook_f2: "Full keyboard shortcuts and hotkeys for seamless editing and scheduling.",
       chromebook_f3: "Resizable freeform windows and smooth multitasking on ChromeOS and laptops.",
-      chromebook_aspect_tag: "Recommended Aspect Ratio: 16:9 Widescreen (1920 × 1080 px)",
+      chromebook_aspect_tag: "Desktop Mode • 16:9 Widescreen",
       chromebook_ratio_info: "Aspect Ratio 16:9 Widescreen • 1920 × 1080 px",
       chromebook_spec_title: "Image Generation Instructions:",
       chromebook_screenshot_hint: "Open HubSocial AI on your Chromebook or laptop (≥ 840dp) and take a full-screen screenshot of the Master-Detail view: post drafts on the left, and the AI editor + side Navigation Rail on the right.",
@@ -565,7 +565,7 @@ window.TRANSLATIONS = {
       tablet_f1: "Dynamic 2-column adaptive grids for comprehensive multi-brand oversight.",
       tablet_f2: "Flex Mode support: prop your foldable phone on the table for hands-free reviews.",
       tablet_f3: "Split Dashboard: editorial action queue on one side, AI strategy advisor on the other.",
-      tablet_aspect_tag: "Recommended Aspect Ratio: 4:3 Wide Tablet (1600 × 1200 px)",
+      tablet_aspect_tag: "Adaptive Display • 4:3 Widescreen",
       tablet_ratio_info: "Aspect Ratio 4:3 Widescreen • 1600 × 1200 px",
       tablet_spec_title: "Image Generation Instructions:",
       tablet_screenshot_hint: "Take a landscape screenshot on your Android tablet or unfolded foldable phone (≥ 600dp) showing the panoramic BrandPulseGrid metrics on top and the 2-column client channels grid.",
@@ -579,7 +579,7 @@ window.TRANSLATIONS = {
       phone_f1: "Express 1-tap post approvals directly from lockscreen push notifications.",
       phone_f2: "Offline-First architecture: draft and queue with zero signal; syncs on reconnection.",
       phone_f3: "Zero battery drain: the Vigilante Agent wakes up only at dispatch time via WorkManager.",
-      phone_aspect_tag: "Recommended Aspect Ratio: 9:16 Mobile Vertical (1080 × 1920 px)",
+      phone_aspect_tag: "Agile Mobile • 1-Handed Navigation",
       phone_ratio_info: "Aspect Ratio 9:16 Mobile Vertical • 1080 × 1920 px",
       phone_spec_title: "Image Generation Instructions:",
       phone_screenshot_hint: "Take a vertical screenshot on your Android phone within the post inspection view, showing the AI copy, multichannel preview badges, and the thumb-accessible 'Approve' action button.",
@@ -730,7 +730,7 @@ window.TRANSLATIONS = {
 
   pt: {
     meta: {
-      title: "HubSocial AI ✨ Sua Suíte Multi-Marca de Automação de Redes com IA",
+      title: "HubSocial AI",
       description: "Gerencie múltiplas marcas, crie conteúdo contextualizado com IA e Memória de Marca e publique no Facebook, Instagram, Threads, LinkedIn, X e Reddit com um Agente Vigilante autônomo 24/7."
     },
     nav: {
@@ -911,7 +911,7 @@ window.TRANSLATIONS = {
       chromebook_f1: "Barra lateral de navegação (NavigationRail) otimizada para mouse e teclado físico.",
       chromebook_f2: "Atalhos rápidos de teclado para edição e navegação ágil entre marcas e calendários.",
       chromebook_f3: "Janelas redimensionáveis e multitarefa fluida no ChromeOS e laptops.",
-      chromebook_aspect_tag: "Formato Recomendado: 16:9 Panorâmico (1920 × 1080 px)",
+      chromebook_aspect_tag: "Modo Desktop • 16:9 Panorâmico",
       chromebook_ratio_info: "Proporção 16:9 Panorâmico • 1920 × 1080 px",
       chromebook_spec_title: "Instruções de Geração de Imagem:",
       chromebook_screenshot_hint: "Abra o HubSocial AI no seu Chromebook ou notebook (≥ 840dp) e tire uma captura de tela cheia do padrão Master-Detail: lista de rascunhos à esquerda e editor com IA + Memória de Marca à direita.",
@@ -925,7 +925,7 @@ window.TRANSLATIONS = {
       tablet_f1: "Grades dinâmicas adaptativas de 2 colunas para monitoramento simultâneo de clientes.",
       tablet_f2: "Modo Flex: apoie seu telefone dobrável na mesa para revisar conteúdos com as mãos livres.",
       tablet_f3: "Split Dashboard: fila editorial e orientações estratégicas de IA em simultâneo.",
-      tablet_aspect_tag: "Formato Recomendado: 4:3 Tela Ampla (1600 × 1200 px)",
+      tablet_aspect_tag: "Tela Ampla • 4:3 Adaptativo",
       tablet_ratio_info: "Proporção 4:3 Tela Ampla • 1600 × 1200 px",
       tablet_spec_title: "Instruções de Geração de Imagem:",
       tablet_screenshot_hint: "Tire uma captura horizontal no seu tablet Android ou celular dobrável aberto (≥ 600dp) exibindo o BrandPulseGrid de métricas no topo e os cards de canais de clientes em 2 colunas.",
@@ -939,7 +939,7 @@ window.TRANSLATIONS = {
       phone_f1: "Aprovação expressa com 1 toque diretamente das notificações push.",
       phone_f2: "Arquitetura Offline-First: crie e agende sem sinal; sincroniza automaticamente ao reconectar.",
       phone_f3: "Bateria protegida: o Agente Vigilante acorda apenas na hora exata com WorkManager nativo.",
-      phone_aspect_tag: "Formato Recomendado: 9:16 Vertical Móvel (1080 × 1920 px)",
+      phone_aspect_tag: "Mobile Ágil • Navegação a 1 Mão",
       phone_ratio_info: "Proporção 9:16 Vertical Móvel • 1080 × 1920 px",
       phone_spec_title: "Instruções de Geração de Imagem:",
       phone_screenshot_hint: "Tire uma captura vertical no seu celular Android na tela de detalhe de post, exibindo o copy gerado por IA, as etiquetas omnicanal e o botão de ação rápida 'Aprovar' ao alcance do polegar.",
