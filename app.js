@@ -34,7 +34,12 @@
 
     currentLang = lang;
     document.documentElement.lang = lang;
-    localStorage.setItem('socialhub_lang', lang);
+
+    try {
+      localStorage.setItem('socialhub_lang', lang);
+    } catch (e) {
+      // Ignored when file:// protocol or storage is restricted
+    }
 
     const dictionary = window.TRANSLATIONS[lang];
 
@@ -98,15 +103,19 @@
       }
     });
 
-    // 6. Sync URL query parameter (?lang=...) without page reload
-    if (updateUrl && window.history && window.history.replaceState) {
-      const url = new URL(window.location.href);
-      if (lang === 'en') {
-        url.searchParams.delete('lang');
-      } else {
-        url.searchParams.set('lang', lang);
+    // 6. Sync URL query parameter (?lang=...) without page reload (safe for file:// origins)
+    if (updateUrl && window.location.protocol !== 'file:' && window.history && window.history.replaceState) {
+      try {
+        const url = new URL(window.location.href);
+        if (lang === 'en') {
+          url.searchParams.delete('lang');
+        } else {
+          url.searchParams.set('lang', lang);
+        }
+        window.history.replaceState({}, '', url.toString());
+      } catch (e) {
+        // Silently skip if history API is restricted
       }
-      window.history.replaceState({}, '', url.toString());
     }
   }
 
@@ -126,9 +135,13 @@
     }
 
     // 2. Saved language preference
-    const saved = localStorage.getItem('socialhub_lang');
-    if (saved && LANG_CONFIG[saved]) {
-      return saved;
+    try {
+      const saved = localStorage.getItem('socialhub_lang');
+      if (saved && LANG_CONFIG[saved]) {
+        return saved;
+      }
+    } catch (e) {
+      // Fallback if localStorage access is restricted in file:// protocol
     }
 
     // 3. Browser language
@@ -144,14 +157,25 @@
    * Setup Language Selector Dropdown
    */
   function initLanguageDropdown() {
+    const langWrapper = document.querySelector('.lang-selector-wrapper');
     const langBtn = document.getElementById('langBtn');
     const langDropdown = document.getElementById('langDropdown');
 
     if (!langBtn || !langDropdown) return;
 
+    function toggleDropdown(forceState) {
+      const isOpen = typeof forceState === 'boolean'
+        ? forceState
+        : !langDropdown.classList.contains('open');
+
+      langDropdown.classList.toggle('open', isOpen);
+      if (langWrapper) langWrapper.classList.toggle('open', isOpen);
+      langBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    }
+
     langBtn.addEventListener('click', (e) => {
       e.stopPropagation();
-      langDropdown.classList.toggle('open');
+      toggleDropdown();
     });
 
     document.querySelectorAll('.lang-option').forEach((option) => {
@@ -160,15 +184,25 @@
         const selectedLang = option.getAttribute('data-lang');
         if (selectedLang && LANG_CONFIG[selectedLang]) {
           applyLanguage(selectedLang);
-          langDropdown.classList.remove('open');
+          toggleDropdown(false);
         }
       });
     });
 
     // Close dropdown on click outside
-    document.addEventListener('click', () => {
+    document.addEventListener('click', (e) => {
       if (langDropdown.classList.contains('open')) {
-        langDropdown.classList.remove('open');
+        if (!langDropdown.contains(e.target) && !langBtn.contains(e.target)) {
+          toggleDropdown(false);
+        }
+      }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && langDropdown.classList.contains('open')) {
+        toggleDropdown(false);
+        langBtn.focus();
       }
     });
   }
@@ -299,6 +333,32 @@
   }
 
   /**
+   * Device Tabs & Multi-Device Panel Interactivity
+   */
+  function initDeviceTabs() {
+    const tabBtns = document.querySelectorAll('.device-tab-btn');
+    const panels = document.querySelectorAll('.device-panel');
+
+    if (!tabBtns.length) return;
+
+    tabBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const targetDevice = btn.getAttribute('data-device');
+
+        tabBtns.forEach((b) => b.classList.remove('active'));
+        panels.forEach((p) => p.classList.remove('active'));
+
+        btn.classList.add('active');
+
+        const activePanel = document.getElementById(`panel-${targetDevice}`);
+        if (activePanel) {
+          activePanel.classList.add('active');
+        }
+      });
+    });
+  }
+
+  /**
    * Initialize Everything on DOM Load
    */
   document.addEventListener('DOMContentLoaded', () => {
@@ -307,6 +367,7 @@
     initLanguageDropdown();
     initFaqAccordion();
     initPricingTabs();
+    initDeviceTabs();
 
     // Detect and apply initial language (without altering initial URL unless user switches)
     const initialLang = detectInitialLanguage();
