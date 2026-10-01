@@ -761,6 +761,15 @@ h1, h2, h3, h4, .font-heading {
    Omnichannel Platforms Showcase
    ========================================================================== */
 
+.vigilante-last-cycle { font-size: 0.85rem; color: var(--text-dim); }
+.vigilante-next-post-label { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-dim); margin-bottom: 8px; }
+.vigilante-queue-content { display: flex; align-items: center; gap: 14px; }
+.vigilante-queue-icon { width: 40px; height: 40px; border-radius: 10px; background: rgba(99, 102, 241, 0.2); display: flex; align-items: center; justify-content: center; color: var(--primary-light); }
+.vigilante-queue-title { font-weight: 700; color: var(--text-white); }
+.vigilante-queue-platform { font-size: 0.82rem; color: var(--text-dim); }
+.vigilante-queue-status { font-size: 0.75rem; background: rgba(16, 185, 129, 0.2); color: #34d399; padding: 4px 10px; border-radius: 99px; font-weight: 700; }
+.vigilante-screenshot { margin-top: 24px; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-glass); }
+
 .platforms-section {
   padding: 100px 0;
   position: relative;
@@ -843,6 +852,11 @@ h1, h2, h3, h4, .font-heading {
   gap: 10px;
 }
 
+.platform-title-icon-active { color: #34d399; }
+.platform-title-icon-pending { color: #fbbf24; }
+
+.responsive-image { width: 100%; height: auto; }
+
 .platform-icon {
   width: 44px;
   height: 44px;
@@ -924,6 +938,9 @@ h1, h2, h3, h4, .font-heading {
 /* ==========================================================================
    Dual-Language Global Architecture Showcase
    ========================================================================== */
+
+.agency-benefit h4 { color: var(--text-white); margin-bottom: 4px; }
+.agency-benefit p { color: var(--text-muted); font-size: 0.95rem; }
 
 .duallang-container {
   margin-top: 64px;
@@ -1349,6 +1366,14 @@ h1, h2, h3, h4, .font-heading {
   border-radius: var(--radius-full);
 }
 
+.pricing-card-badge--free { background: linear-gradient(135deg, #3b82f6, #06b6d4); }
+.pricing-card-badge--starter { background: linear-gradient(135deg, #10b981, #3b82f6); }
+.pricing-card-badge--scale { background: linear-gradient(135deg, #8b5cf6, #ec4899); }
+.pricing-card-badge--elite { background: linear-gradient(135deg, #f59e0b, #ef4444); }
+.pricing-bolt-icon { color: #eab308; }
+.pricing-cta { width: 100%; }
+.pricing-group--agencies { margin-top: 48px; }
+
 .pricing-header h3 {
   font-size: 1.6rem;
   color: var(--text-white);
@@ -1528,6 +1553,12 @@ h1, h2, h3, h4, .font-heading {
   z-index: 1;
 }
 
+.cta-section-badge {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
 /* ==========================================================================
    Site Footer
    ========================================================================== */
@@ -1552,6 +1583,10 @@ h1, h2, h3, h4, .font-heading {
   color: var(--text-white);
   margin-bottom: 14px;
 }
+
+.footer-brand-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.footer-brand-logo { width: 32px; height: 32px; border-radius: 8px; }
+.footer-brand-badge { font-size: 0.7rem; vertical-align: middle; margin-left: 4px; }
 
 .footer-brand p {
   font-size: 0.92rem;
@@ -1591,6 +1626,9 @@ h1, h2, h3, h4, .font-heading {
   font-size: 0.88rem;
   color: var(--text-dim);
 }
+
+.footer-social-links { display: flex; gap: 18px; }
+.footer-social-link { color: var(--text-dim); }
 
 /* ==========================================================================
    Responsive Adaptations (Tablets & Mobile)
