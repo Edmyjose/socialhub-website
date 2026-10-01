@@ -92,3 +92,15 @@ Puedes abrir directamente el archivo `index.html` en cualquier navegador web mod
 file:///D:/GitHub/socialhub/index.html
 ```
 No requiere ningún servidor web, Node.js ni herramientas de compilación para funcionar o alternar entre idiomas.
+
+
+## Campaign Attribution and Events
+
+The landing page captures `utm_source`, `utm_medium`, `utm_campaign`, `utm_content`, and `utm_term`, `gclid`, `gbraid`, `wbraid`, and `fbclid` for the current session. It queues these events in `window.dataLayer` so a Google Tag Manager container can consume them after one is configured:
+
+- `landing_view`
+- `hero_cta_click` and `how_it_works_click`
+- `pricing_view` and `pricing_plan_click`
+- `download_google_play_click` and `contact_support_click`
+
+No analytics provider or tracking tag is loaded by default. Until you add and configure a Tag Manager container, these events remain in the page and are not sent to an analytics service. Install conversion tracking for store installs and paid subscriptions separately in the relevant app stores and application billing flows.

@@ -54,6 +54,10 @@
       if (ogTitle && dictionary.meta.title) ogTitle.setAttribute('content', dictionary.meta.title);
       const ogDesc = document.querySelector('meta[property="og:description"]');
       if (ogDesc && dictionary.meta.description) ogDesc.setAttribute('content', dictionary.meta.description);
+      const twitterTitle = document.querySelector('meta[property="twitter:title"]');
+      if (twitterTitle && dictionary.meta.title) twitterTitle.setAttribute('content', dictionary.meta.title);
+      const twitterDesc = document.querySelector('meta[property="twitter:description"]');
+      if (twitterDesc && dictionary.meta.description) twitterDesc.setAttribute('content', dictionary.meta.description);
     }
 
     // 2. Update all elements with textContent translation
@@ -117,6 +121,21 @@
         // Silently skip if history API is restricted
       }
     }
+    // Keep explicit language URLs canonical to themselves; omit campaign parameters.
+    if (window.location.protocol !== 'file:') {
+      const canonical = document.querySelector('link[rel="canonical"]');
+      if (canonical) {
+        const canonicalUrl = new URL(window.location.href);
+        ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'gclid', 'fbclid'].forEach((key) => canonicalUrl.searchParams.delete(key));
+        if (canonicalUrl.searchParams.get('lang') === 'en') canonicalUrl.searchParams.delete('lang');
+        canonical.href = canonicalUrl.toString();
+        const ogUrl = document.querySelector('meta[property="og:url"]');
+        if (ogUrl) ogUrl.setAttribute('content', canonicalUrl.toString());
+        const twitterUrl = document.querySelector('meta[property="twitter:url"]');
+        if (twitterUrl) twitterUrl.setAttribute('content', canonicalUrl.toString());
+      }
+    }
+
   }
 
   /**
@@ -400,6 +419,48 @@
   /**
    * Initialize Everything on DOM Load
    */
+  /** Queue campaign attribution and conversion events for a configured GTM container. */
+  function initMarketingEvents() {
+    const keys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'gclid', 'gbraid', 'wbraid', 'fbclid'];
+    const params = new URLSearchParams(window.location.search);
+    const current = {};
+    keys.forEach((key) => { const value = params.get(key); if (value) current[key] = value; });
+    let attribution = current;
+    try {
+      if (Object.keys(current).length) sessionStorage.setItem('hubsocial_attribution', JSON.stringify(current));
+      else attribution = JSON.parse(sessionStorage.getItem('hubsocial_attribution') || '{}');
+    } catch (e) { /* Storage can be unavailable in private or file contexts. */ }
+
+    window.dataLayer = window.dataLayer || [];
+    const track = (event, details = {}) => window.dataLayer.push({ event, ...attribution, ...details });
+    track('landing_view');
+    document.addEventListener('click', (event) => {
+      const target = event.target instanceof Element ? event.target.closest('a, button') : null;
+      if (!target) return;
+      if (target.id === 'heroCtaPrimary') track('hero_cta_click');
+      if (target.id === 'heroCtaSecondary') track('how_it_works_click');
+      if (target.id === 'btnDownloadGooglePlay') track('download_google_play_click');
+      if (target.id === 'btnContactSupport') track('contact_support_click');
+      if (target.matches('.pricing-card a, #pricingCompareContent a')) {
+        const plan = target.closest('.pricing-card')?.querySelector('.pricing-header h3')?.textContent.trim()
+          || target.getAttribute('data-i18n')?.replace('pricing.compare_cta_', '') || 'unknown';
+        track('pricing_plan_click', { plan });
+      }
+    });
+    const pricing = document.getElementById('pricing');
+    if (pricing && 'IntersectionObserver' in window) {
+      let seen = false;
+      const observer = new IntersectionObserver((entries) => {
+        if (!seen && entries.some((entry) => entry.isIntersecting)) {
+          seen = true;
+          track('pricing_view');
+          observer.disconnect();
+        }
+      }, { threshold: 0.2 });
+      observer.observe(pricing);
+    }
+  }
+
   document.addEventListener('DOMContentLoaded', () => {
     initStickyHeader();
     initMobileMenu();
@@ -408,6 +469,7 @@
     initPricingTabs();
     initPricingCompare();
     initDeviceTabs();
+    initMarketingEvents();
 
     // Detect and apply initial language (without altering initial URL unless user switches)
     const initialLang = detectInitialLanguage();
