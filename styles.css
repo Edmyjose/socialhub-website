@@ -130,6 +130,16 @@ button {
   outline: none;
 }
 
+/* Keep keyboard navigation visible without changing pointer interactions. */
+:focus-visible {
+  outline: 3px solid var(--primary-light);
+  outline-offset: 3px;
+}
+
+.lang-option:focus-visible {
+  outline-offset: -3px;
+}
+
 .container {
   width: 100%;
   max-width: 1240px;

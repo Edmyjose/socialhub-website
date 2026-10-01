@@ -139,7 +139,9 @@
   }
 
   /**
-   * Determine initial language: URL query (?lang=..) -> localStorage -> browser language -> fallback 'en'
+   * Determine initial language: URL query (?lang=..) -> localStorage -> English.
+   * English is deliberately the default; IP geolocation would require a third-party
+   * service and could override an explicit visitor preference.
    */
   function detectInitialLanguage() {
     // 1. URL search param check (e.g. ?lang=es)
@@ -163,12 +165,7 @@
       // Fallback if localStorage access is restricted in file:// protocol
     }
 
-    // 3. Browser language
-    const browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
-    if (browserLang.startsWith('es')) return 'es';
-    if (browserLang.startsWith('pt')) return 'pt';
-
-    // 4. Default fallback: English
+    // 3. Default fallback: English
     return 'en';
   }
 
@@ -251,30 +248,33 @@
 
     if (!toggle || !navLinks) return;
 
-    toggle.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
+    function setMenuOpen(isOpen) {
+      navLinks.classList.toggle('open', isOpen);
+      toggle.setAttribute('aria-expanded', String(isOpen));
+      toggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
       const icon = toggle.querySelector('i');
       if (icon) {
-        if (navLinks.classList.contains('open')) {
-          icon.classList.remove('fa-bars');
-          icon.classList.add('fa-xmark');
-        } else {
-          icon.classList.remove('fa-xmark');
-          icon.classList.add('fa-bars');
-        }
+        icon.classList.toggle('fa-bars', !isOpen);
+        icon.classList.toggle('fa-xmark', isOpen);
       }
+    }
+
+    toggle.addEventListener('click', () => {
+      setMenuOpen(!navLinks.classList.contains('open'));
     });
 
     // Close menu when tapping any link
     navLinks.querySelectorAll('a').forEach((link) => {
       link.addEventListener('click', () => {
-        navLinks.classList.remove('open');
-        const icon = toggle.querySelector('i');
-        if (icon) {
-          icon.classList.remove('fa-xmark');
-          icon.classList.add('fa-bars');
-        }
+        setMenuOpen(false);
       });
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && navLinks.classList.contains('open')) {
+        setMenuOpen(false);
+        toggle.focus();
+      }
     });
   }
 
@@ -284,11 +284,20 @@
   function initFaqAccordion() {
     const faqItems = document.querySelectorAll('.faq-item');
 
-    faqItems.forEach((item) => {
+    faqItems.forEach((item, index) => {
       const question = item.querySelector('.faq-question');
       const answer = item.querySelector('.faq-answer');
 
       if (!question || !answer) return;
+
+      const questionId = `faq-question-${index + 1}`;
+      const answerId = `faq-answer-${index + 1}`;
+      question.id = questionId;
+      question.setAttribute('aria-controls', answerId);
+      question.setAttribute('aria-expanded', 'false');
+      answer.id = answerId;
+      answer.setAttribute('role', 'region');
+      answer.setAttribute('aria-labelledby', questionId);
 
       question.addEventListener('click', () => {
         const isActive = item.classList.contains('active');
@@ -297,6 +306,7 @@
         faqItems.forEach((other) => {
           if (other !== item) {
             other.classList.remove('active');
+            other.querySelector('.faq-question')?.setAttribute('aria-expanded', 'false');
             const otherAnswer = other.querySelector('.faq-answer');
             if (otherAnswer) otherAnswer.style.maxHeight = null;
           }
@@ -305,9 +315,11 @@
         // Toggle current item
         if (isActive) {
           item.classList.remove('active');
+          question.setAttribute('aria-expanded', 'false');
           answer.style.maxHeight = null;
         } else {
           item.classList.add('active');
+          question.setAttribute('aria-expanded', 'true');
           answer.style.maxHeight = answer.scrollHeight + 'px';
         }
       });

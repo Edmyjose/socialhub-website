@@ -74,7 +74,7 @@ window.TRANSLATIONS = {
       "step2_tip": "✍️ Tú tienes la última palabra: edita el texto, cambia imágenes o afina detalles.",
       "step3_badge": "3",
       "step3_title": "Se publica solo a la hora perfecta",
-      "step3_desc": "Publica al instante o déjalo programado. La app publica por ti en todas tus redes a la vez, incluso si tu teléfono está bloqueado o guardado.",
+      "step3_desc": "Publica al instante o déjalo programado. La app publica por ti en todas tus redes a la vez, incluso si tu dispositivo Android está bloqueado o guardado.",
       "step3_tip": "🚀 Tu asistente trabaja 24/7 sin que tengas que estar pendiente."
     },
     "comparison": {
@@ -90,7 +90,7 @@ window.TRANSLATIONS = {
       "good_item1": "Ideas infinitas y redacción profesional adaptada a tu negocio en 5 segundos.",
       "good_item2": "Un solo toque publica o programa en Facebook, Instagram, LinkedIn, Threads, X y Reddit.",
       "good_item3": "Publicador automático 24/7 que trabaja por ti mientras duermes o atiendes a tus clientes.",
-      "good_item4": "Todo desde una app rápida y moderna en tu teléfono Android por una fracción del costo."
+      "good_item4": "Todo desde una app rápida y moderna en tus dispositivos Android por una fracción del costo."
     },
     "features": {
       "section_badge": "Lo que hace por ti",
@@ -430,7 +430,7 @@ window.TRANSLATIONS = {
       "subtitle": "¿Tienes preguntas sobre cómo funciona HubSocial AI? Aquí te respondemos.",
       "q1": "¿HubSocial AI almacena mis contraseñas de redes sociales?",
       "a1": "No, en lo absoluto. Inicias sesión directamente en las páginas oficiales de cada red social (Meta, Google, LinkedIn, Reddit). La app se conecta mediante autorizaciones oficiales seguras, sin tener acceso, ver ni guardar jamás tus contraseñas personales.",
-      "q2": "¿Cómo funciona el Agente Vigilante si mi teléfono se apaga o reinicia?",
+      "q2": "¿Cómo funciona el Agente Vigilante si mi dispositivo Android se apaga o reinicia?",
       "a2": "El Agente Vigilante programa tus publicaciones. En lugar de mantener la app abierta consumiendo batería en segundo plano, tus entregas quedan registradas como tareas que despiertan exactamente en el momento programado o inmediatamente al reiniciar y recuperar señal. Así tu contenido nunca se pierde y tu batería permanece intacta.",
       "q3": "¿Qué sucede si tengo varias marcas? ¿Se pueden mezclar las cuentas?",
       "a3": "No. HubSocial AI implementa espacios de trabajo 100% blindados e independientes. Cada cuenta social queda asignada con exclusividad a una sola marca, garantizando que nunca se crucen publicaciones ni se mezclen perfiles entre clientes.",
@@ -534,7 +534,7 @@ window.TRANSLATIONS = {
       "step2_tip": "✍️ You have the final say: edit copy, change visuals, or fine-tune details.",
       "step3_badge": "3",
       "step3_title": "Publishes automatically at the best time",
-      "step3_desc": "Publish immediately or schedule ahead. The app publishes across all your networks simultaneously, even if your phone is locked or away.",
+      "step3_desc": "Publish immediately or schedule ahead. The app publishes across all your networks simultaneously, even if your Android device is locked or away.",
       "step3_tip": "🚀 Works 24/7 in the background without needing your supervision."
     },
     "comparison": {
@@ -550,7 +550,7 @@ window.TRANSLATIONS = {
       "good_item1": "Endless ideas and professional on-brand copy created in 5 seconds.",
       "good_item2": "One tap publishes or schedules across Facebook, Instagram, LinkedIn, Threads, X, and Reddit.",
       "good_item3": "24/7 autonomous publisher working for you while you sleep or focus on clients.",
-      "good_item4": "Full control right from your fast Android app at a fraction of the cost."
+      "good_item4": "Full control across your Android devices at a fraction of the cost."
     },
     "features": {
       "section_badge": "What It Does For You",
@@ -994,7 +994,7 @@ window.TRANSLATIONS = {
       "step2_tip": "✍️ Você tem a palavra final: edite o texto, troque imagens ou ajuste detalhes.",
       "step3_badge": "3",
       "step3_title": "Publica sozinho no horário perfeito",
-      "step3_desc": "Publique na hora ou deixe agendado. O aplicativo publica em todas as suas redes simultaneamente, mesmo com o celular bloqueado ou guardado.",
+      "step3_desc": "Publique na hora ou deixe agendado. O aplicativo publica em todas as suas redes simultaneamente, mesmo com seu dispositivo Android bloqueado ou guardado.",
       "step3_tip": "🚀 Seu assistente trabalha 24 horas por dia sem precisar da sua atenção."
     },
     "comparison": {
@@ -1010,7 +1010,7 @@ window.TRANSLATIONS = {
       "good_item1": "Ideias infinitas e redação profissional adaptada ao seu negócio em 5 segundos.",
       "good_item2": "Um único toque publica ou agenda no Facebook, Instagram, LinkedIn, Threads, X e Reddit.",
       "good_item3": "Publicador automático 24/7 trabalhando enquanto você dorme ou atende clientes.",
-      "good_item4": "Tudo em um app rápido e moderno no seu celular Android por uma fração do preço."
+      "good_item4": "Tudo em um app rápido e moderno nos seus dispositivos Android por uma fração do preço."
     },
     "features": {
       "section_badge": "O que Faz por Você",
@@ -1350,7 +1350,7 @@ window.TRANSLATIONS = {
       "subtitle": "Tudo o que você precisa saber sobre o HubSocial AI e nossa tecnologia autônoma.",
       "q1": "O HubSocial AI armazena minhas senhas de redes sociais?",
       "a1": "Não, jamais. Você faz login diretamente nas páginas oficiais de cada plataforma (Meta, Google, LinkedIn, Reddit). O HubSocial AI conecta-se através de autorizações oficiais seguras, sem nunca ter acesso, ver ou armazenar suas senhas pessoais.",
-      "q2": "Como funciona o Agente Vigilante se meu telefone desligar?",
+      "q2": "Como funciona o Agente Vigilante se meu dispositivo Android desligar?",
       "a2": "O Agente Vigilante agenda suas publicações com total segurança. Em vez de manter o app aberto consumindo bateria em segundo plano, seus envios ficam registrados como tarefas que despertam exatamente no horário programado ou logo após reiniciar e recuperar sinal. Seu conteúdo nunca se perde e sua bateria permanece intacta.",
       "q3": "Se eu gerenciar várias marcas, posso postar na conta errada sem querer?",
       "a3": "Não. O HubSocial AI implementa espaços de trabalho 100% blindados e independentes. Cada conta social pertence exclusivamente a uma marca, impedindo qualquer mistura acidental de postagens entre clientes.",

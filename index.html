@@ -113,19 +113,20 @@
       <div class="nav-actions">
         <!-- Language Switcher Dropdown -->
         <div class="lang-selector-wrapper">
-          <button class="lang-btn" id="langBtn" type="button" aria-label="Select language">
+          <button class="lang-btn" id="langBtn" type="button" aria-label="Select language" aria-haspopup="menu"
+            aria-expanded="false" aria-controls="langDropdown">
             <span id="currentLangFlag">🇺🇸</span>
             <span id="currentLangLabel">EN</span>
             <i class="fa-solid fa-chevron-down arrow"></i>
           </button>
-          <div class="lang-dropdown" id="langDropdown">
-            <button class="lang-option active" type="button" data-lang="en">
+          <div class="lang-dropdown" id="langDropdown" role="menu" aria-label="Language options">
+            <button class="lang-option active" type="button" data-lang="en" role="menuitem">
               <span>🇺🇸</span> English
             </button>
-            <button class="lang-option" type="button" data-lang="es">
+            <button class="lang-option" type="button" data-lang="es" role="menuitem">
               <span>🇪🇸</span> Español
             </button>
-            <button class="lang-option" type="button" data-lang="pt">
+            <button class="lang-option" type="button" data-lang="pt" role="menuitem">
               <span>🇧🇷</span> Português
             </button>
           </div>
@@ -138,7 +139,8 @@
         </a>
 
         <!-- Mobile Menu Hamburger -->
-        <button class="mobile-toggle" id="mobileMenuToggle" type="button" aria-label="Open navigation menu">
+        <button class="mobile-toggle" id="mobileMenuToggle" type="button" aria-label="Open navigation menu"
+          aria-expanded="false" aria-controls="navLinks">
           <i class="fa-solid fa-bars"></i>
         </button>
       </div>
@@ -160,7 +162,8 @@
           <span data-i18n="hero.title_part2"></span>
         </h1>
         <p class="hero-subtitle" data-i18n="hero.subtitle">
-          HubSocial brings brand memory, content creation and review, scheduling, and publishing across your social channels into one workspace. You stay in editorial control.
+          HubSocial brings brand memory, content creation and review, scheduling, and publishing across your social
+          channels into one workspace. You stay in editorial control.
         </p>
         <div class="hero-actions">
           <a href="#download" class="btn btn-primary" id="heroCtaPrimary">
@@ -257,7 +260,7 @@
           <div class="step-badge-number" data-i18n="how_it_works.step3_badge">3</div>
           <h3 data-i18n="how_it_works.step3_title">Se publica solo a la hora perfecta</h3>
           <p data-i18n="how_it_works.step3_desc">Publica al instante o déjalo programado. La app publica por ti en todas
-            tus redes a la vez, incluso si tu teléfono está bloqueado o guardado.</p>
+            tus redes a la vez, incluso si tu dispositivo Android está bloqueado o guardado.</p>
           <div class="step-tip" data-i18n="how_it_works.step3_tip">🚀 Tu asistente trabaja 24/7 sin que tengas que estar
             pendiente.</div>
         </div>
@@ -269,20 +272,22 @@
        Before vs After Comparison Section (Real Help)
        ========================================================================= -->
 
-<!-- Real product screens: brand context, multi-brand workspace and publishing tools -->
+  <!-- Real product screens: brand context, multi-brand workspace and publishing tools -->
   <section class="product-proof-section" id="product-tour">
     <div class="container">
       <div class="section-header">
         <div class="section-badge" data-i18n="product_proof.section_badge">Built for content operations</div>
         <h2 data-i18n="product_proof.title">A complete suite, with your brand as its context.</h2>
-        <p data-i18n="product_proof.subtitle">See how HubSocial connects each brand’s knowledge with strategy, review, and publishing across your channels.</p>
+        <p data-i18n="product_proof.subtitle">See how HubSocial connects each brand’s knowledge with strategy, review,
+          and publishing across your channels.</p>
       </div>
 
       <article class="product-memory-feature glass-card">
         <div class="product-memory-copy">
           <span class="product-proof-kicker"><i class="fa-solid fa-brain"></i> Brand Memory</span>
           <h3 data-i18n="product_proof.memory_title">AI starts with what makes your brand yours</h3>
-          <p data-i18n="product_proof.memory_desc">Add brand context, reference documents, and visual assets so every draft has a foundation in your business, products, and voice.</p>
+          <p data-i18n="product_proof.memory_desc">Add brand context, reference documents, and visual assets so every
+            draft has a foundation in your business, products, and voice.</p>
           <ul class="product-memory-tags">
             <li data-i18n="product_proof.memory_tag1">Brand voice and context</li>
             <li data-i18n="product_proof.memory_tag2">Knowledge base</li>
@@ -290,30 +295,37 @@
           </ul>
         </div>
         <figure class="product-memory-screen">
-          <img src="images/product-brand-memory.webp" alt="HubSocial AI brand context and knowledge base settings" width="1600" height="1000" loading="lazy" decoding="async">
+          <img src="images/product-brand-memory.webp" alt="HubSocial AI brand context and knowledge base settings"
+            width="1600" height="1000" loading="lazy" decoding="async">
         </figure>
       </article>
 
       <div class="product-proof-grid">
         <article class="product-proof-card glass-card">
-          <figure><img src="images/product-dashboard.webp" alt="HubSocial AI multi-brand dashboard" width="1600" height="1333" loading="lazy" decoding="async"></figure>
+          <figure><img src="images/product-dashboard.webp" alt="HubSocial AI multi-brand dashboard" width="1600"
+              height="1333" loading="lazy" decoding="async"></figure>
           <div class="product-proof-card-copy">
             <h3 data-i18n="product_proof.dashboard_title">A workspace for every brand</h3>
-            <p data-i18n="product_proof.dashboard_desc">See brands, connected channels, campaigns, and posts in one place.</p>
+            <p data-i18n="product_proof.dashboard_desc">See brands, connected channels, campaigns, and posts in one
+              place.</p>
           </div>
         </article>
         <article class="product-proof-card glass-card">
-          <figure><img src="images/product-channels.webp" alt="Official social channels connected in HubSocial AI" width="1600" height="1000" loading="lazy" decoding="async"></figure>
+          <figure><img src="images/product-channels.webp" alt="Official social channels connected in HubSocial AI"
+              width="1600" height="1000" loading="lazy" decoding="async"></figure>
           <div class="product-proof-card-copy">
             <h3 data-i18n="product_proof.channels_title">Connect your official channels</h3>
-            <p data-i18n="product_proof.channels_desc">Review connected networks and their status inside each brand workspace.</p>
+            <p data-i18n="product_proof.channels_desc">Review connected networks and their status inside each brand
+              workspace.</p>
           </div>
         </article>
         <article class="product-proof-card glass-card">
-          <figure><img src="images/product-content.webp" alt="HubSocial AI content creation interface" width="1600" height="1000" loading="lazy" decoding="async"></figure>
+          <figure><img src="images/product-content.webp" alt="HubSocial AI content creation interface" width="1600"
+              height="1000" loading="lazy" decoding="async"></figure>
           <div class="product-proof-card-copy">
             <h3 data-i18n="product_proof.content_title">Prepare content for review</h3>
-            <p data-i18n="product_proof.content_desc">Organize drafts and posts by brand before you approve and schedule them.</p>
+            <p data-i18n="product_proof.content_desc">Organize drafts and posts by brand before you approve and schedule
+              them.</p>
           </div>
         </article>
       </div>
@@ -365,7 +377,7 @@
             <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="comparison.good_item3">Programación
                 centralizada que publica puntualmente en tus redes seleccionadas.</span></li>
             <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="comparison.good_item4">Toda la potencia de
-                creación y gestión en tu teléfono Android por un costo accesible.</span></li>
+                creación y gestión en tus dispositivos Android por un costo accesible.</span></li>
           </ul>
         </div>
       </div>
@@ -858,7 +870,7 @@
   <!-- =========================================================================
        Pricing Section
        ========================================================================= -->
-    <section class="devices-section" id="devices">
+  <section class="devices-section" id="devices">
     <div class="container">
       <div class="section-header">
         <div class="section-badge" data-i18n="devices.section_badge">Ecosistema Multi-Dispositivo</div>
@@ -1294,12 +1306,15 @@
                 <span class="period" data-i18n="pricing.plan_starter_period">/ mes</span>
               </div>
               <ul class="pricing-features">
-                <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_starter_f1">Hasta 2 Marcas activas</span>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_starter_f1">Hasta 2 Marcas
+                    activas</span>
                 </li>
-                <li><i class="fa-solid fa-check"></i> <strong><span data-i18n="pricing.plan_starter_f2">Hasta 3 Canales oficiales
+                <li><i class="fa-solid fa-check"></i> <strong><span data-i18n="pricing.plan_starter_f2">Hasta 3 Canales
+                      oficiales
                       vinculados</span></strong></li>
                 <li><i class="fa-solid fa-bolt" style="color:#eab308;"></i> <strong><span
-                      data-i18n="pricing.plan_starter_f3">250 Créditos de IA al mes · 1 crédito = 1 acción de IA</span></strong></li>
+                      data-i18n="pricing.plan_starter_f3">250 Créditos de IA al mes · 1 crédito = 1 acción de
+                      IA</span></strong></li>
                 <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_starter_f4">Hasta 3 Campañas
                     simultáneas</span></li>
                 <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_starter_f5">Modelo IA Rápido</span>
@@ -1329,10 +1344,12 @@
               <ul class="pricing-features">
                 <li><i class="fa-solid fa-check"></i> <strong><span data-i18n="pricing.plan_pro_f1">Hasta 5 Marcas
                       activas</span></strong></li>
-                <li><i class="fa-solid fa-check"></i> <strong><span data-i18n="pricing.plan_pro_f2">Hasta 10 Canales oficiales
+                <li><i class="fa-solid fa-check"></i> <strong><span data-i18n="pricing.plan_pro_f2">Hasta 10 Canales
+                      oficiales
                       vinculados</span></strong></li>
                 <li><i class="fa-solid fa-bolt" style="color:#eab308;"></i> <strong><span
-                      data-i18n="pricing.plan_pro_f3">600 créditos de IA al mes · 1 crédito = 1 acción de IA</span></strong></li>
+                      data-i18n="pricing.plan_pro_f3">600 créditos de IA al mes · 1 crédito = 1 acción de
+                      IA</span></strong></li>
                 <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_pro_f4">Hasta 10 Campañas
                     simultáneas</span></li>
                 <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_pro_f5">Modelo IA Avanzado con
@@ -1375,7 +1392,8 @@
                 <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_scale_f2">Hasta 25 Canales oficiales
                     vinculados</span></li>
                 <li><i class="fa-solid fa-bolt" style="color:#eab308;"></i> <strong><span
-                      data-i18n="pricing.plan_scale_f3">1,500 Créditos de IA al mes · 1 crédito = 1 acción de IA</span></strong></li>
+                      data-i18n="pricing.plan_scale_f3">1,500 Créditos de IA al mes · 1 crédito = 1 acción de
+                      IA</span></strong></li>
                 <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_scale_f4">Hasta 25 Campañas
                     simultáneas</span></li>
                 <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_scale_f5">Workflows con
@@ -1405,10 +1423,12 @@
               <ul class="pricing-features">
                 <li><i class="fa-solid fa-check"></i> <strong><span data-i18n="pricing.plan_elite_f1">Hasta 50 Marcas /
                       Clientes activos</span></strong></li>
-                <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_elite_f2">Hasta 100 Canales oficiales
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_elite_f2">Hasta 100 Canales
+                    oficiales
                     vinculados</span></li>
                 <li><i class="fa-solid fa-bolt" style="color:#eab308;"></i> <strong><span
-                      data-i18n="pricing.plan_elite_f3">4,000 Créditos de IA al mes · 1 crédito = 1 acción de IA</span></strong></li>
+                      data-i18n="pricing.plan_elite_f3">4,000 Créditos de IA al mes · 1 crédito = 1 acción de
+                      IA</span></strong></li>
                 <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_elite_f4">Hasta 100 Campañas
                     simultáneas</span></li>
                 <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_elite_f5">Modelos de IA de Máxima
@@ -1426,19 +1446,23 @@
       <!-- Expandable Comparison Matrix Section -->
       <div class="pricing-compare-section" id="pricingCompareSection">
         <div class="pricing-compare-trigger-wrap">
-          <button type="button" class="pricing-compare-toggle-btn" id="pricingCompareToggle" aria-expanded="false" aria-controls="pricingCompareContent">
+          <button type="button" class="pricing-compare-toggle-btn" id="pricingCompareToggle" aria-expanded="false"
+            aria-controls="pricingCompareContent">
             <div class="compare-toggle-left">
               <span class="compare-toggle-icon">
                 <i class="fa-solid fa-table-list"></i>
               </span>
               <div class="compare-toggle-text">
-                <span class="compare-toggle-title" data-i18n="pricing.compare_toggle_title">Comparar todos los planes y características detalladas</span>
-                <span class="compare-toggle-desc" data-i18n="pricing.compare_toggle_desc">Revisa límites de marcas, créditos de IA, redes vinculadas y funciones avanzadas cara a cara</span>
+                <span class="compare-toggle-title" data-i18n="pricing.compare_toggle_title">Comparar todos los planes y
+                  características detalladas</span>
+                <span class="compare-toggle-desc" data-i18n="pricing.compare_toggle_desc">Revisa límites de marcas,
+                  créditos de IA, redes vinculadas y funciones avanzadas cara a cara</span>
               </div>
             </div>
             <div class="compare-toggle-right">
               <span class="compare-toggle-badge" data-i18n="pricing.compare_toggle_badge">5 PLANES</span>
-              <span class="compare-toggle-action-label" data-i18n="pricing.compare_toggle_show">Ver Matriz Comparativa Completa</span>
+              <span class="compare-toggle-action-label" data-i18n="pricing.compare_toggle_show">Ver Matriz Comparativa
+                Completa</span>
               <span class="compare-toggle-chevron">
                 <i class="fa-solid fa-chevron-down"></i>
               </span>
@@ -1453,7 +1477,8 @@
                 <table class="compare-table">
                   <thead>
                     <tr>
-                      <th class="col-feature" scope="col" data-i18n="pricing.compare_col_feature">Característica / Capacidad</th>
+                      <th class="col-feature" scope="col" data-i18n="pricing.compare_col_feature">Característica /
+                        Capacidad</th>
                       <th class="col-plan" scope="col">
                         <div class="plan-th-name" data-i18n="pricing.compare_col_free">Free Trial</div>
                         <div class="plan-th-price" data-i18n="pricing.compare_col_free_sub">$0 / 7 días</div>
@@ -1491,31 +1516,39 @@
                       <td class="cell-feature" data-i18n="pricing.compare_row_brands">Marcas / Clientes activos</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_brands_free">1 Marca</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_brands_starter">Hasta 2 Marcas</td>
-                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_brands_pro">Hasta 5 Marcas</td>
+                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_brands_pro">Hasta 5
+                        Marcas</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_brands_scale">Hasta 15 Clientes</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_brands_elite">Hasta 50 Clientes</td>
                     </tr>
                     <tr>
                       <td class="cell-feature" data-i18n="pricing.compare_row_networks">Redes sociales por marca</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_networks_free">1 canal oficial</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_networks_starter">Hasta 3 canales oficiales</td>
-                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_networks_pro">Hasta 10 canales oficiales</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_networks_scale">Hasta 25 canales oficiales</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_networks_elite">Hasta 100 canales oficiales</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_networks_starter">Hasta 3 canales oficiales
+                      </td>
+                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_networks_pro">Hasta 10
+                        canales oficiales</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_networks_scale">Hasta 25 canales oficiales
+                      </td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_networks_elite">Hasta 100 canales oficiales
+                      </td>
                     </tr>
                     <tr>
                       <td class="cell-feature" data-i18n="pricing.compare_row_campaigns">Campañas simultáneas</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_campaigns_free">1 Campaña</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_campaigns_starter">Hasta 3 Campañas</td>
-                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_campaigns_pro">Hasta 10 Campañas</td>
+                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_campaigns_pro">Hasta 10
+                        Campañas</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_campaigns_scale">Hasta 25 Campañas</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_campaigns_elite">Hasta 100 Campañas</td>
                     </tr>
                     <tr>
-                      <td class="cell-feature" data-i18n="pricing.compare_row_platforms">Redes oficiales soportadas (Meta, IG, Threads, LinkedIn, X, Reddit)</td>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_platforms">Redes oficiales soportadas
+                        (Meta, IG, Threads, LinkedIn, X, Reddit)</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_platforms_free">1 canal oficial</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_platforms_starter">4 canales oficiales</td>
-                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_platforms_pro">Todos los 6 canales</td>
+                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_platforms_pro">Todos los
+                        6 canales</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_platforms_scale">Todos los 6 canales</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_platforms_elite">Todos los 6 canales</td>
                     </tr>
@@ -1525,7 +1558,8 @@
                       <td colspan="6">
                         <div class="group-header-inner">
                           <i class="fa-solid fa-wand-magic-sparkles"></i>
-                          <span data-i18n="pricing.compare_group_ai">Inteligencia Artificial y Creación de Contenido</span>
+                          <span data-i18n="pricing.compare_group_ai">Inteligencia Artificial y Creación de
+                            Contenido</span>
                         </div>
                       </td>
                     </tr>
@@ -1533,7 +1567,8 @@
                       <td class="cell-feature" data-i18n="pricing.compare_row_credits">Créditos de IA mensuales</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_credits_free">10 Créditos (prueba)</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_credits_starter">250 Créditos / mes</td>
-                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_credits_pro">600 Créditos / mes</td>
+                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_credits_pro">600
+                        Créditos / mes</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_credits_scale">1,500 Créditos / mes</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_credits_elite">4,000 Créditos / mes</td>
                     </tr>
@@ -1541,36 +1576,46 @@
                       <td class="cell-feature" data-i18n="pricing.compare_row_aimodel">Nivel de Modelo IA</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_aimodel_free">Básico</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_aimodel_starter">Rápido de Producción</td>
-                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_aimodel_pro">Avanzado Multimodal</td>
+                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_aimodel_pro">Avanzado
+                        Multimodal</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_aimodel_scale">Avanzado + Auto-Prompt</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_aimodel_elite">Ultra Capacidad & Baja Latencia</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_aimodel_elite">Ultra Capacidad & Baja Latencia
+                      </td>
                     </tr>
                     <tr>
-                      <td class="cell-feature" data-i18n="pricing.compare_row_brandmemory">Memoria de Marca (Reglas de voz, documentos de marca)</td>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_brandmemory">Memoria de Marca (Reglas de
+                        voz, documentos de marca)</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_brandmemory_free">Básica</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_brandmemory_starter">Estándar</td>
-                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_brandmemory_pro">Completa con Voz de Marca</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_brandmemory_scale">Avanzada e Independiente</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_brandmemory_elite">Avanzada con Biblioteca Extendida</td>
+                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_brandmemory_pro">
+                        Completa con Voz de Marca</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_brandmemory_scale">Avanzada e Independiente
+                      </td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_brandmemory_elite">Avanzada con Biblioteca
+                        Extendida</td>
                     </tr>
                     <tr>
                       <td class="cell-feature" data-i18n="pricing.compare_row_vision">Imágenes con Visión IA / mes</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_vision_free">10 imágenes</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_vision_starter">20 imágenes</td>
-                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_vision_pro">50 imágenes</td>
+                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_vision_pro">50 imágenes
+                      </td>
                       <td class="cell-val" data-i18n="pricing.compare_val_vision_scale">100 imágenes</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_vision_elite">250 imágenes</td>
                     </tr>
                     <tr>
-                      <td class="cell-feature" data-i18n="pricing.compare_row_videos">Videos que puedes añadir a la biblioteca / mes</td>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_videos">Videos que puedes añadir a la
+                        biblioteca / mes</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_videos_free">1 video</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_videos_starter">3 videos</td>
-                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_videos_pro">5 videos</td>
+                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_videos_pro">5 videos
+                      </td>
                       <td class="cell-val" data-i18n="pricing.compare_val_videos_scale">15 videos</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_videos_elite">30 videos</td>
                     </tr>
                     <tr>
-                      <td class="cell-feature" data-i18n="pricing.compare_row_storage">Tamaño máximo por archivo, incluidos videos</td>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_storage">Tamaño máximo por archivo,
+                        incluidos videos</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_storage_all">50 MB</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_storage_all">50 MB</td>
                       <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_storage_all">50 MB</td>
@@ -1578,7 +1623,8 @@
                       <td class="cell-val" data-i18n="pricing.compare_val_storage_all">50 MB</td>
                     </tr>
                     <tr>
-                      <td class="cell-feature" data-i18n="pricing.compare_row_omnichannel">Generación Omnicanal (1 post adaptado a cada red con IA)</td>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_omnichannel">Generación Omnicanal (1 post
+                        adaptado a cada red con IA)</td>
                       <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
                       <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
                       <td class="cell-val col-pro"><i class="fa-solid fa-circle-check check-yes"></i></td>
@@ -1586,7 +1632,8 @@
                       <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
                     </tr>
                     <tr>
-                      <td class="cell-feature" data-i18n="pricing.compare_row_duallang">Arquitectura Doble Idioma (App en tu idioma, posts en idioma del cliente)</td>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_duallang">Arquitectura Doble Idioma (App
+                        en tu idioma, posts en idioma del cliente)</td>
                       <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
                       <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
                       <td class="cell-val col-pro"><i class="fa-solid fa-circle-check check-yes"></i></td>
@@ -1607,12 +1654,15 @@
                       <td class="cell-feature" data-i18n="pricing.compare_row_vigilante">Agente Vigilante 24/7</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_vigilante_free">Estándar</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_vigilante_starter">Continuo 24/7</td>
-                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_vigilante_pro">Alta Frecuencia 24/7</td>
+                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_vigilante_pro">Alta
+                        Frecuencia 24/7</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_vigilante_scale">Alta Concurrencia</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_vigilante_elite">Máxima Concurrencia Dedicada</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_vigilante_elite">Máxima Concurrencia Dedicada
+                      </td>
                     </tr>
                     <tr>
-                      <td class="cell-feature" data-i18n="pricing.compare_row_push_approval">Aprobación exprés con 1 toque en notificación móvil</td>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_push_approval">Aprobación exprés con 1
+                        toque en notificación móvil</td>
                       <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
                       <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
                       <td class="cell-val col-pro"><i class="fa-solid fa-circle-check check-yes"></i></td>
@@ -1620,7 +1670,8 @@
                       <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
                     </tr>
                     <tr>
-                      <td class="cell-feature" data-i18n="pricing.compare_row_auto_approval">Workflows con Auto-Aprobación autónoma</td>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_auto_approval">Workflows con
+                        Auto-Aprobación autónoma</td>
                       <td class="cell-val"><i class="fa-solid fa-minus check-no"></i></td>
                       <td class="cell-val"><i class="fa-solid fa-minus check-no"></i></td>
                       <td class="cell-val col-pro"><i class="fa-solid fa-minus check-no"></i></td>
@@ -1628,7 +1679,8 @@
                       <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
                     </tr>
                     <tr>
-                      <td class="cell-feature" data-i18n="pricing.compare_row_failed_inbox">Bandeja de publicaciones fallidas y reintento inteligente</td>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_failed_inbox">Bandeja de publicaciones
+                        fallidas y reintento inteligente</td>
                       <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
                       <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
                       <td class="cell-val col-pro"><i class="fa-solid fa-circle-check check-yes"></i></td>
@@ -1636,7 +1688,8 @@
                       <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
                     </tr>
                     <tr>
-                      <td class="cell-feature" data-i18n="pricing.compare_row_offline">Arquitectura Offline-First (Modo vuelo sin conexión)</td>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_offline">Arquitectura Offline-First (Modo
+                        vuelo sin conexión)</td>
                       <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
                       <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
                       <td class="cell-val col-pro"><i class="fa-solid fa-circle-check check-yes"></i></td>
@@ -1644,7 +1697,8 @@
                       <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
                     </tr>
                     <tr>
-                      <td class="cell-feature" data-i18n="pricing.compare_row_multidevice">Continuidad y Sesión Simultánea Multi-Dispositivo</td>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_multidevice">Continuidad y Sesión
+                        Simultánea Multi-Dispositivo</td>
                       <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
                       <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
                       <td class="cell-val col-pro"><i class="fa-solid fa-circle-check check-yes"></i></td>
@@ -1657,20 +1711,24 @@
                       <td colspan="6">
                         <div class="group-header-inner">
                           <i class="fa-solid fa-building-user"></i>
-                          <span data-i18n="pricing.compare_group_support">Espacios de Trabajo, Portafolio y Soporte</span>
+                          <span data-i18n="pricing.compare_group_support">Espacios de Trabajo, Portafolio y
+                            Soporte</span>
                         </div>
                       </td>
                     </tr>
                     <tr>
-                      <td class="cell-feature" data-i18n="pricing.compare_row_workspaces">Espacios de trabajo blindados e independientes</td>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_workspaces">Espacios de trabajo blindados
+                        e independientes</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_workspaces_free">1 Espacio</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_workspaces_starter">2 Espacios aislados</td>
-                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_workspaces_pro">5 Espacios aislados</td>
+                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_workspaces_pro">5
+                        Espacios aislados</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_workspaces_scale">15 Espacios aislados</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_workspaces_elite">50 Espacios aislados</td>
                     </tr>
                     <tr>
-                      <td class="cell-feature" data-i18n="pricing.compare_row_portfolio">Centro de Control y Portafolio de Clientes</td>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_portfolio">Centro de Control y Portafolio
+                        de Clientes</td>
                       <td class="cell-val"><i class="fa-solid fa-minus check-no"></i></td>
                       <td class="cell-val"><i class="fa-solid fa-minus check-no"></i></td>
                       <td class="cell-val col-pro"><i class="fa-solid fa-minus check-no"></i></td>
@@ -1678,10 +1736,12 @@
                       <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
                     </tr>
                     <tr>
-                      <td class="cell-feature" data-i18n="pricing.compare_row_support">Nivel de Soporte y Acompañamiento</td>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_support">Nivel de Soporte y Acompañamiento
+                      </td>
                       <td class="cell-val" data-i18n="pricing.compare_val_support_free">Comunidad</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_support_starter">Email Estándar</td>
-                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_support_pro">Email Prioritario</td>
+                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_support_pro">Email
+                        Prioritario</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_support_scale">Canal Prioritario VIP</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_support_elite">Soporte VIP 24/7 Dedicado</td>
                     </tr>
@@ -1690,19 +1750,24 @@
                     <tr class="table-cta-row">
                       <td class="cell-feature"></td>
                       <td class="cell-val">
-                        <a href="#download" class="btn btn-secondary btn-sm" data-i18n="pricing.compare_cta_free">Probar Gratis</a>
+                        <a href="#download" class="btn btn-secondary btn-sm" data-i18n="pricing.compare_cta_free">Probar
+                          Gratis</a>
                       </td>
                       <td class="cell-val">
-                        <a href="#download" class="btn btn-secondary btn-sm" data-i18n="pricing.compare_cta_starter">Elegir Creator</a>
+                        <a href="#download" class="btn btn-secondary btn-sm"
+                          data-i18n="pricing.compare_cta_starter">Elegir Creator</a>
                       </td>
                       <td class="cell-val col-pro">
-                        <a href="#download" class="btn btn-primary btn-sm" data-i18n="pricing.compare_cta_pro">Elegir Pro</a>
+                        <a href="#download" class="btn btn-primary btn-sm" data-i18n="pricing.compare_cta_pro">Elegir
+                          Pro</a>
                       </td>
                       <td class="cell-val">
-                        <a href="#download" class="btn btn-secondary btn-sm" data-i18n="pricing.compare_cta_scale">Elegir Scale</a>
+                        <a href="#download" class="btn btn-secondary btn-sm"
+                          data-i18n="pricing.compare_cta_scale">Elegir Scale</a>
                       </td>
                       <td class="cell-val">
-                        <a href="#download" class="btn btn-secondary btn-sm" data-i18n="pricing.compare_cta_elite">Elegir Elite</a>
+                        <a href="#download" class="btn btn-secondary btn-sm"
+                          data-i18n="pricing.compare_cta_elite">Elegir Elite</a>
                       </td>
                     </tr>
                   </tbody>
@@ -1897,11 +1962,11 @@
         <div class="footer-col">
           <h4 data-i18n="footer.col_legal">Legal y Privacidad</h4>
           <ul>
-            <li><a href="https://ejsstudios.com/socialhub/privacy.html" target="_blank"
+            <li><a href="https://ejsstudios.com/socialhub/privacy.html" target="_blank" rel="noopener noreferrer"
                 data-i18n="footer.privacy">Política de Privacidad</a></li>
-            <li><a href="https://ejsstudios.com/socialhub/delete-data.html" target="_blank"
+            <li><a href="https://ejsstudios.com/socialhub/delete-data.html" target="_blank" rel="noopener noreferrer"
                 data-i18n="footer.delete_data">Borrado de Datos</a></li>
-            <li><a href="https://ejsstudios.com/socialhub/deauthorize.html" target="_blank"
+            <li><a href="https://ejsstudios.com/socialhub/deauthorize.html" target="_blank" rel="noopener noreferrer"
                 data-i18n="footer.auth_callback">Desautorización Meta</a></li>
           </ul>
         </div>
