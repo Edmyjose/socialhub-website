@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://socialhub.ejsstudios.com/sitemap.xml
+Sitemap: https://hubsocial.ejsstudios.com/sitemap.xml

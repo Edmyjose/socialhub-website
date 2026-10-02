@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://socialhub.ejsstudios.com/</loc>
-    <lastmod>2026-09-26</lastmod>
+    <loc>https://hubsocial.ejsstudios.com/</loc>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://socialhub.ejsstudios.com/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://socialhub.ejsstudios.com/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://socialhub.ejsstudios.com/?lang=es" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://socialhub.ejsstudios.com/?lang=pt" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hubsocial.ejsstudios.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hubsocial.ejsstudios.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://hubsocial.ejsstudios.com/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hubsocial.ejsstudios.com/?lang=pt" />
   </url>
 </urlset>

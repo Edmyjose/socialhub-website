@@ -41,7 +41,7 @@ D:\GitHub\socialhub\
 ├── translations.js     # DICCIONARIO ÚNICO con todas las traducciones (ES, EN, PT)
 ├── styles.css          # Sistema de diseño Vanilla CSS (Glassmorphism, Dark Mode, Glows)
 ├── app.js              # Motor i18n, sticky navbar, acordeón FAQ y menú móvil
-├── CNAME               # Dominio personalizado: socialhub.ejsstudios.com
+├── CNAME               # Dominio personalizado: hubsocial.ejsstudios.com
 ├── robots.txt          # Directivas para rastreadores de búsqueda
 ├── sitemap.xml         # Mapa del sitio con enlaces alternativos hreflang
 ├── README.md           # Esta guía de uso y despliegue
@@ -75,12 +75,12 @@ git push -u origin main
 3. En **Build and deployment > Source**, selecciona `Deploy from a branch`.
 4. Elige rama `main` y carpeta `/ (root)`.
 5. Haz clic en **Save**.
-6. En **Custom domain**, confirma que detecte `socialhub.ejsstudios.com` y marca **Enforce HTTPS**.
+6. En **Custom domain**, confirma que detecte `hubsocial.ejsstudios.com` y marca **Enforce HTTPS**.
 
 ### 3. Configuración DNS en tu proveedor de dominio:
 Agrega un registro `CNAME` en tu proveedor DNS (Cloudflare / Namecheap / GoDaddy / etc.):
 - **Tipo**: `CNAME`
-- **Nombre (Host)**: `socialhub`
+- **Nombre (Host)**: `hubsocial`
 - **Valor / Destino**: `edmyjose.github.io` (o el CNAME raíz de tu GitHub Pages)
 
 ---
