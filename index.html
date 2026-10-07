@@ -11,7 +11,7 @@
   <meta name="description"
     content="Manage multiple brands, keep their context with Brand Memory, and create, review, and schedule social content from one workspace.">
   <meta name="keywords"
-    content="social media ai, social media automation, multi-brand, ai community manager, brand memory ai, meta api, instagram reels, threads ai, reddit bot, ejs studios">
+    content="social media ai, social media automation, multi-brand, ai community manager, brand memory ai, meta api, instagram reels, threads ai, ejs studios">
   <meta name="author" content="EJS Studios">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#070510">
@@ -133,7 +133,7 @@
         </div>
 
         <!-- Download CTA -->
-        <a href="#download" class="btn btn-primary btn-sm" id="navDownloadBtn">
+        <a href="#beta-testers-details" class="btn btn-primary btn-sm beta-open-link" id="navDownloadBtn">
           <i class="fa-brands fa-google-play"></i>
           <span data-i18n="nav.download_btn">Start Free</span>
         </a>
@@ -166,15 +166,16 @@
           channels into one workspace. You stay in editorial control.
         </p>
         <div class="hero-actions">
-          <a href="#download" class="btn btn-primary" id="heroCtaPrimary">
-            <i class="fa-brands fa-android"></i>
-            <span data-i18n="hero.cta_primary">Start free</span>
+          <a href="#beta-testers-details" class="btn btn-primary beta-open-link" id="heroCtaPrimary">
+            <i class="fa-solid fa-user-plus"></i>
+            <span data-i18n="beta_testers.cta">Join the closed beta</span>
           </a>
           <a href="#how-it-works" class="btn btn-secondary" id="heroCtaSecondary">
             <i class="fa-solid fa-sparkles"></i>
             <span data-i18n="hero.cta_secondary">See how it works</span>
           </a>
         </div>
+        <a class="beta-hero-link" href="#beta-testers" data-i18n="beta_testers.hero_link">¿Eres creador? Únete a la prueba cerrada de 7 días</a>
 
         <!-- Hero Metrics Bar -->
         <div class="hero-stats">
@@ -216,6 +217,77 @@
       </div>
     </div>
   </section>
+
+  <!-- =========================================================================
+       Closed Beta Testers Section
+       ========================================================================= -->
+  <section class="beta-section" id="beta-testers">
+    <div class="container">
+      <details class="beta-card" id="beta-testers-details">
+        <summary class="beta-summary">
+          <span class="section-badge beta-badge" data-i18n="beta_testers.badge">Convocatoria de prueba cerrada</span>
+          <span class="beta-summary-heading" data-i18n="beta_testers.title">Ayúdanos a mejorar SocialHub AI</span>
+          <span class="beta-summary-intro" data-i18n="beta_testers.subtitle">
+            Buscamos creadores y gestores de redes para probar la versión beta durante 7 días y compartir comentarios honestos.
+          </span>
+          <span class="btn btn-primary beta-expand-button">
+            <i class="fa-solid fa-user-plus"></i>
+            <span class="beta-expand-open-label" data-i18n="beta_testers.expand">Ver cómo unirme como tester</span>
+            <span class="beta-expand-close-label" data-i18n="beta_testers.collapse">Ocultar instrucciones</span>
+            <i class="fa-solid fa-chevron-down beta-expand-chevron" aria-hidden="true"></i>
+          </span>
+        </summary>
+
+        <div class="beta-content">
+
+        <div class="beta-demo">
+          <h3 data-i18n="beta_testers.demo_title">Mira cómo funciona SocialHub AI</h3>
+          <video data-beta-demo="es" controls playsinline preload="none" hidden aria-label="Demostración de SocialHub AI en español">
+            <source src="videos/socialhub-demo-es.mp4" type="video/mp4">
+            <track kind="captions" srclang="es" label="Español" src="videos/socialhub-demo-es.vtt" default>
+            Tu navegador no puede reproducir este video.
+          </video>
+          <video data-beta-demo="en" controls playsinline preload="none" aria-label="SocialHub AI demo in English">
+            <source src="videos/socialhub-demo-en.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este video.
+          </video>
+        </div>
+
+        <div class="beta-steps">
+          <article class="beta-step">
+            <span class="beta-step-number">1</span>
+            <div>
+              <h3 data-i18n="beta_testers.step1_title">Únete al grupo de testers</h3>
+              <p data-i18n="beta_testers.step1_desc">Entra al grupo de Google con la misma cuenta que usarás para instalar la beta.</p>
+            </div>
+          </article>
+          <article class="beta-step">
+            <span class="beta-step-number">2</span>
+            <div>
+              <h3 data-i18n="beta_testers.step2_title">Activa e instala la beta</h3>
+              <p data-i18n="beta_testers.step2_desc">Después de unirte al grupo, abre el enlace de Google Play y acepta la prueba con esa misma cuenta.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="beta-actions">
+          <a href="https://groups.google.com/g/hubsocialai" target="_blank" rel="noopener noreferrer"
+            class="btn btn-primary" id="btnBetaGroup">
+            <i class="fa-solid fa-users"></i>
+            <span data-i18n="beta_testers.join_group">Unirme al grupo de testers</span>
+          </a>
+          <a href="https://play.google.com/apps/testing/com.ejsstudios.socialhub" target="_blank" rel="noopener noreferrer"
+            class="btn btn-secondary" id="btnBetaOptIn">
+            <i class="fa-brands fa-google-play"></i>
+            <span data-i18n="beta_testers.join_beta">Unirme a la prueba en Google Play</span>
+          </a>
+          <p class="beta-note" data-i18n="beta_testers.note">Esta convocatoria es para la versión de prueba, no para la ficha pública de producción. Reddit todavía no está disponible para publicar desde la app.</p>
+        </div>
+        </div>
+      </details>
+    </div>
+  </section>
+
 
   <!-- =========================================================================
        Multi-Device & Anywhere Mobility Section (Chromebook, Tablet, Fold, Phone)
@@ -556,7 +628,7 @@
 
       <!-- Active Channels Subgroup -->
       <h3 class="platforms-subgroup-title"><i class="fa-solid fa-circle-check platform-title-icon-active"></i> <span
-          data-i18n="platforms.active_heading">Redes Sociales Oficiales Disponibles (6 Redes)</span></h3>
+          data-i18n="platforms.active_heading">Redes Sociales Oficiales Disponibles (5 Redes)</span></h3>
       <div class="platforms-grid">
         <!-- Facebook -->
         <div class="glass-card platform-card">
@@ -628,24 +700,12 @@
             depender de intermediarios.</p>
         </div>
 
-        <!-- Reddit -->
-        <div class="glass-card platform-card">
-          <div class="platform-card-header">
-            <div class="platform-icon pi-reddit"><i class="fa-brands fa-reddit-alien"></i></div>
-            <div class="platform-title-wrap">
-              <h4>Reddit</h4>
-              <span class="platform-status-badge badge-byok"><i class="fa-solid fa-link"></i> <span
-                  data-i18n="platforms.badge_byok">Conexión Directa</span></span>
-            </div>
-          </div>
-          <p data-i18n="platforms.reddit_desc">Publica en tus comunidades y foros favoritos mediante conexión directa (BYOK) con formato markdown.</p>
-        </div>
       </div>
 
-      <!-- Plain Language Explainer Banner for X & Reddit (BYOK) -->
+      <!-- Plain Language Explainer Banner for X (BYOK) -->
       <div class="plain-explainer-banner">
         <i class="fa-solid fa-circle-info"></i>
-        <p data-i18n="platforms.byok_banner">¿Por qué X (Twitter) y Reddit solicitan conexión directa (BYOK)? Tanto X como Reddit aplican tarifas elevadas y restricciones a plataformas intermediarias. Con HubSocial conectas tus cuentas oficiales de forma directa (BYOK) en 2 sencillos pasos para que publiques libremente en tus perfiles y subreddits sin pagar comisiones extra ni depender de terceros.</p>
+        <p data-i18n="platforms.byok_banner">X requiere una conexión directa (BYOK). Conecta tus credenciales oficiales siguiendo las instrucciones de la app.</p>
       </div>
 
       <!-- Roadmap Subgroup -->
@@ -653,6 +713,19 @@
         <h3 class="platforms-subgroup-title"><i class="fa-solid fa-clock platform-title-icon-pending"></i> <span
             data-i18n="platforms.roadmap_heading">En Hoja de Ruta / Próximamente</span></h3>
         <div class="platforms-grid">
+          <!-- Reddit -->
+          <div class="glass-card platform-card roadmap-card">
+            <div class="platform-card-header">
+              <div class="platform-icon pi-reddit"><i class="fa-brands fa-reddit-alien"></i></div>
+              <div class="platform-title-wrap">
+                <h4>Reddit</h4>
+                <span class="platform-status-badge badge-pending"><i class="fa-solid fa-clock"></i> <span
+                    data-i18n="platforms.badge_roadmap">Próximamente</span></span>
+              </div>
+            </div>
+            <p data-i18n="platforms.reddit_desc">La publicación en Reddit todavía no está disponible mientras adaptamos la integración a Devvit.</p>
+          </div>
+
           <!-- YouTube -->
           <div class="glass-card platform-card roadmap-card">
             <div class="platform-card-header">
@@ -1279,9 +1352,10 @@
                 </li>
                 <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_free_f6">Vigilante autónomo
                     estándar</span></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_free_f7">Archivos y videos de hasta 50 MB</span></li>
               </ul>
             </div>
-            <a href="#download" class="btn btn-secondary pricing-cta" data-i18n="pricing.plan_free_cta">Probar
+            <a href="#beta-testers-details" class="btn btn-secondary pricing-cta" data-i18n="beta_testers.cta">Probar
               7 Días Gratis</a>
           </div>
 
@@ -1315,10 +1389,11 @@
                 </li>
                 <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_starter_f6">Vigilante de publicación
                     24/7</span></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_starter_f7">Archivos y videos de hasta 150 MB</span></li>
               </ul>
             </div>
-            <a href="#download" class="btn btn-secondary pricing-cta"
-              data-i18n="pricing.plan_starter_cta">Elegir Creator</a>
+            <a href="#beta-testers-details" class="btn btn-secondary pricing-cta"
+              data-i18n="beta_testers.cta">Elegir Creator</a>
           </div>
 
           <!-- Plan 3: Pro ($59 / mes) Highlighted -->
@@ -1350,9 +1425,10 @@
                     Reglas de Memoria de Marca</span></li>
                 <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_pro_f6">Vigilante de alta frecuencia
                     24/7</span></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_pro_f7">Archivos y videos de hasta 150 MB</span></li>
               </ul>
             </div>
-            <a href="#download" class="btn btn-primary pricing-cta" data-i18n="pricing.plan_pro_cta">Elegir
+            <a href="#beta-testers-details" class="btn btn-primary pricing-cta" data-i18n="beta_testers.cta">Elegir
               Plan Pro</a>
           </div>
         </div>
@@ -1394,9 +1470,10 @@
                     Auto-Aprobación autónoma</span></li>
                 <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_scale_f6">Centro de Control y
                     Portafolio de Clientes</span></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_scale_f7">Archivos y videos de hasta 500 MB</span></li>
               </ul>
             </div>
-            <a href="#download" class="btn btn-secondary pricing-cta" data-i18n="pricing.plan_scale_cta">Elegir
+            <a href="#beta-testers-details" class="btn btn-secondary pricing-cta" data-i18n="beta_testers.cta">Elegir
               Agency Scale</a>
           </div>
 
@@ -1429,9 +1506,10 @@
                     Capacidad y Entrega Prioritaria</span></li>
                 <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_elite_f6">Soporte VIP Prioritario
                     24/7</span></li>
+                <li><i class="fa-solid fa-check"></i> <span data-i18n="pricing.plan_elite_f7">Archivos y videos de hasta 500 MB</span></li>
               </ul>
             </div>
-            <a href="#download" class="btn btn-secondary pricing-cta" data-i18n="pricing.plan_elite_cta">Elegir
+            <a href="#beta-testers-details" class="btn btn-secondary pricing-cta" data-i18n="beta_testers.cta">Elegir
               Agency Elite</a>
           </div>
         </div>
@@ -1516,7 +1594,7 @@
                       <td class="cell-val" data-i18n="pricing.compare_val_brands_elite">Hasta 50 Clientes</td>
                     </tr>
                     <tr>
-                      <td class="cell-feature" data-i18n="pricing.compare_row_networks">Redes sociales por marca</td>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_networks">Perfiles sociales conectados en toda la cuenta</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_networks_free">1 canal oficial</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_networks_starter">Hasta 3 canales oficiales
                       </td>
@@ -1537,14 +1615,12 @@
                       <td class="cell-val" data-i18n="pricing.compare_val_campaigns_elite">Hasta 100 Campañas</td>
                     </tr>
                     <tr>
-                      <td class="cell-feature" data-i18n="pricing.compare_row_platforms">Redes oficiales soportadas
-                        (Meta, IG, Threads, LinkedIn, X, Reddit)</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_platforms_free">1 canal oficial</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_platforms_starter">4 canales oficiales</td>
-                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_platforms_pro">Todos los
-                        6 canales</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_platforms_scale">Todos los 6 canales</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_platforms_elite">Todos los 6 canales</td>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_platforms">Integraciones disponibles: Facebook, Instagram, Threads, LinkedIn y X</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_platforms_free">Disponibles</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_platforms_starter">Disponibles</td>
+                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_platforms_pro">Disponibles</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_platforms_scale">Disponibles</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_platforms_elite">Disponibles</td>
                     </tr>
 
                     <!-- Category 2: AI & Content Creation -->
@@ -1567,29 +1643,15 @@
                       <td class="cell-val" data-i18n="pricing.compare_val_credits_elite">4,000 Créditos / mes</td>
                     </tr>
                     <tr>
-                      <td class="cell-feature" data-i18n="pricing.compare_row_aimodel">Nivel de Modelo IA</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_aimodel_free">Básico</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_aimodel_starter">Rápido de Producción</td>
-                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_aimodel_pro">Avanzado
-                        Multimodal</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_aimodel_scale">Avanzado + Auto-Prompt</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_aimodel_elite">Ultra Capacidad & Baja Latencia
-                      </td>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_brandmemory">Contexto y memoria de marca</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_brandmemory_free">Incluido</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_brandmemory_starter">Incluido</td>
+                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_brandmemory_pro">Incluido</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_brandmemory_scale">Incluido</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_brandmemory_elite">Incluido</td>
                     </tr>
                     <tr>
-                      <td class="cell-feature" data-i18n="pricing.compare_row_brandmemory">Memoria de Marca (Reglas de
-                        voz, documentos de marca)</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_brandmemory_free">Básica</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_brandmemory_starter">Estándar</td>
-                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_brandmemory_pro">
-                        Completa con Voz de Marca</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_brandmemory_scale">Avanzada e Independiente
-                      </td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_brandmemory_elite">Avanzada con Biblioteca
-                        Extendida</td>
-                    </tr>
-                    <tr>
-                      <td class="cell-feature" data-i18n="pricing.compare_row_vision">Imágenes con Visión IA / mes</td>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_vision">Análisis de imágenes con IA por contexto de marca</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_vision_free">10 imágenes</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_vision_starter">20 imágenes</td>
                       <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_vision_pro">50 imágenes
@@ -1598,8 +1660,7 @@
                       <td class="cell-val" data-i18n="pricing.compare_val_vision_elite">250 imágenes</td>
                     </tr>
                     <tr>
-                      <td class="cell-feature" data-i18n="pricing.compare_row_videos">Videos que puedes añadir a la
-                        biblioteca / mes</td>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_videos">Videos que puedes añadir a la biblioteca por contexto de marca</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_videos_free">1 video</td>
                       <td class="cell-val" data-i18n="pricing.compare_val_videos_starter">3 videos</td>
                       <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_videos_pro">5 videos
@@ -1610,11 +1671,19 @@
                     <tr>
                       <td class="cell-feature" data-i18n="pricing.compare_row_storage">Tamaño máximo por archivo,
                         incluidos videos</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_storage_all">50 MB</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_storage_all">50 MB</td>
-                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_storage_all">50 MB</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_storage_all">50 MB</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_storage_all">50 MB</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_storage_free">50 MB</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_storage_starter">150 MB</td>
+                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_storage_pro">150 MB</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_storage_scale">500 MB</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_storage_elite">500 MB</td>
+                    </tr>
+                    <tr>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_total_storage">Almacenamiento total para contexto y borradores</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_total_storage_free">100 MB</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_total_storage_starter">500 MB</td>
+                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_total_storage_pro">2 GB</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_total_storage_scale">5 GB</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_total_storage_elite">15 GB</td>
                     </tr>
                     <tr>
                       <td class="cell-feature" data-i18n="pricing.compare_row_omnichannel">Generación Omnicanal (1 post
@@ -1645,14 +1714,12 @@
                       </td>
                     </tr>
                     <tr>
-                      <td class="cell-feature" data-i18n="pricing.compare_row_vigilante">Agente Vigilante 24/7</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_vigilante_free">Estándar</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_vigilante_starter">Continuo 24/7</td>
-                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_vigilante_pro">Alta
-                        Frecuencia 24/7</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_vigilante_scale">Alta Concurrencia</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_vigilante_elite">Máxima Concurrencia Dedicada
-                      </td>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_vigilante">Automatización y monitoreo de publicaciones programadas</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_vigilante_free">Incluido</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_vigilante_starter">Incluido</td>
+                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_vigilante_pro">Incluido</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_vigilante_scale">Incluido</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_vigilante_elite">Incluido</td>
                     </tr>
                     <tr>
                       <td class="cell-feature" data-i18n="pricing.compare_row_push_approval">Aprobación exprés con 1
@@ -1664,11 +1731,10 @@
                       <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
                     </tr>
                     <tr>
-                      <td class="cell-feature" data-i18n="pricing.compare_row_auto_approval">Workflows con
-                        Auto-Aprobación autónoma</td>
-                      <td class="cell-val"><i class="fa-solid fa-minus check-no"></i></td>
-                      <td class="cell-val"><i class="fa-solid fa-minus check-no"></i></td>
-                      <td class="cell-val col-pro"><i class="fa-solid fa-minus check-no"></i></td>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_auto_approval">Flujo de revisión y aprobación de contenido</td>
+                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
+                      <td class="cell-val col-pro"><i class="fa-solid fa-circle-check check-yes"></i></td>
                       <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
                       <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
                     </tr>
@@ -1700,7 +1766,7 @@
                       <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
                     </tr>
 
-                    <!-- Category 4: Workspaces & Support -->
+                    <!-- Category 4: Shared dashboard -->
                     <tr class="table-group-header">
                       <td colspan="6">
                         <div class="group-header-inner">
@@ -1711,57 +1777,34 @@
                       </td>
                     </tr>
                     <tr>
-                      <td class="cell-feature" data-i18n="pricing.compare_row_workspaces">Espacios de trabajo blindados
-                        e independientes</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_workspaces_free">1 Espacio</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_workspaces_starter">2 Espacios aislados</td>
-                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_workspaces_pro">5
-                        Espacios aislados</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_workspaces_scale">15 Espacios aislados</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_workspaces_elite">50 Espacios aislados</td>
-                    </tr>
-                    <tr>
-                      <td class="cell-feature" data-i18n="pricing.compare_row_portfolio">Centro de Control y Portafolio
-                        de Clientes</td>
-                      <td class="cell-val"><i class="fa-solid fa-minus check-no"></i></td>
-                      <td class="cell-val"><i class="fa-solid fa-minus check-no"></i></td>
-                      <td class="cell-val col-pro"><i class="fa-solid fa-minus check-no"></i></td>
-                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
-                      <td class="cell-val"><i class="fa-solid fa-circle-check check-yes"></i></td>
-                    </tr>
-                    <tr>
-                      <td class="cell-feature" data-i18n="pricing.compare_row_support">Nivel de Soporte y Acompañamiento
-                      </td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_support_free">Comunidad</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_support_starter">Email Estándar</td>
-                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_support_pro">Email
-                        Prioritario</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_support_scale">Canal Prioritario VIP</td>
-                      <td class="cell-val" data-i18n="pricing.compare_val_support_elite">Soporte VIP 24/7 Dedicado</td>
+                      <td class="cell-feature" data-i18n="pricing.compare_row_workspaces">Panel con vista global de marcas y actividad</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_workspaces_free">Incluido</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_workspaces_starter">Incluido</td>
+                      <td class="cell-val col-pro highlight-val" data-i18n="pricing.compare_val_workspaces_pro">Incluido</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_workspaces_scale">Incluido</td>
+                      <td class="cell-val" data-i18n="pricing.compare_val_workspaces_elite">Incluido</td>
                     </tr>
 
                     <!-- CTA Row -->
                     <tr class="table-cta-row">
                       <td class="cell-feature"></td>
                       <td class="cell-val">
-                        <a href="#download" class="btn btn-secondary btn-sm" data-i18n="pricing.compare_cta_free">Probar
-                          Gratis</a>
+                        <a href="#beta-testers-details" class="btn btn-secondary btn-sm" data-i18n="beta_testers.cta">Unirme a la beta</a>
                       </td>
                       <td class="cell-val">
-                        <a href="#download" class="btn btn-secondary btn-sm"
-                          data-i18n="pricing.compare_cta_starter">Elegir Creator</a>
+                        <a href="#beta-testers-details" class="btn btn-secondary btn-sm"
+                          data-i18n="beta_testers.cta">Unirme a la beta</a>
                       </td>
                       <td class="cell-val col-pro">
-                        <a href="#download" class="btn btn-primary btn-sm" data-i18n="pricing.compare_cta_pro">Elegir
-                          Pro</a>
+                        <a href="#beta-testers-details" class="btn btn-primary btn-sm" data-i18n="beta_testers.cta">Unirme a la beta</a>
                       </td>
                       <td class="cell-val">
-                        <a href="#download" class="btn btn-secondary btn-sm"
-                          data-i18n="pricing.compare_cta_scale">Elegir Scale</a>
+                        <a href="#beta-testers-details" class="btn btn-secondary btn-sm"
+                          data-i18n="beta_testers.cta">Unirme a la beta</a>
                       </td>
                       <td class="cell-val">
-                        <a href="#download" class="btn btn-secondary btn-sm"
-                          data-i18n="pricing.compare_cta_elite">Elegir Elite</a>
+                        <a href="#beta-testers-details" class="btn btn-secondary btn-sm"
+                          data-i18n="beta_testers.cta">Unirme a la beta</a>
                       </td>
                     </tr>
                   </tbody>
@@ -1795,7 +1838,7 @@
           <div class="faq-answer">
             <div class="faq-answer-inner" data-i18n="faq.a1">
               No, en lo absoluto. Inicias sesión directamente en las páginas oficiales de cada red social (Meta, Google,
-              LinkedIn, Reddit). La app se conecta mediante autorizaciones oficiales seguras, sin tener acceso, ver ni
+              LinkedIn). La app se conecta mediante autorizaciones oficiales seguras, sin tener acceso, ver ni
               guardar jamás tus contraseñas personales.
             </div>
           </div>
@@ -1865,12 +1908,12 @@
         <!-- Q6 -->
         <div class="faq-item">
           <button class="faq-question" type="button">
-            <span data-i18n="faq.q6">¿Por qué X / Twitter y Reddit utilizan conexión directa (BYOK)?</span>
+            <span data-i18n="faq.q6">¿Por qué X / Twitter utiliza conexión directa (BYOK)?</span>
             <i class="fa-solid fa-chevron-down faq-chevron"></i>
           </button>
           <div class="faq-answer">
             <div class="faq-answer-inner" data-i18n="faq.a6">
-              Debido a las tarifas elevadas y restricciones que X y Reddit imponen a herramientas intermediarias, HubSocial AI te permite conectar tus credenciales de desarrollador de forma directa (Bring Your Own Key). Así publicas de forma segura en tus perfiles y subreddits, conservando tu propia privacidad, control de karma y sin intermediarios ni costes extra.
+              X requiere una conexión directa (Bring Your Own Key). Sigue las instrucciones de la app para conectar tu cuenta.
             </div>
           </div>
         </div>
@@ -1907,10 +1950,9 @@
         <p data-i18n="cta_banner.subtitle">Deja atrás las planillas complejas y los programadores manuales. Empieza
           gratis con HubSocial AI.</p>
         <div class="cta-buttons">
-          <a href="https://play.google.com/store/apps/details?id=com.ejsstudios.socialhub" target="_blank"
-            rel="noopener noreferrer" class="btn btn-primary" id="btnDownloadGooglePlay">
-            <i class="fa-brands fa-google-play"></i>
-            <span data-i18n="cta_banner.btn_download">Descargar HubSocial AI</span>
+          <a href="#beta-testers-details" class="btn btn-primary beta-open-link" id="btnBetaEntry">
+            <i class="fa-solid fa-user-plus"></i>
+            <span data-i18n="beta_testers.cta">Unirme a la prueba cerrada</span>
           </a>
           <a href="mailto:contacto@ejsstudios.com" class="btn btn-secondary" id="btnContactSupport">
             <i class="fa-solid fa-envelope"></i>

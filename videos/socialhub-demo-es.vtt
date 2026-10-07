@@ -1,0 +1,25 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:05.000
+El usuario inicia sesión en la aplicación HubSocial AI a través de la autenticación de Google.
+
+00:00:06.000 --> 00:00:11.000
+Se registra una nueva marca o negocio, definiendo su nombre, industria e idioma de contenido.
+
+00:00:12.000 --> 00:00:35.000
+Se suben archivos de conocimiento e imágenes de referencia para que la IA entienda el contexto y la identidad visual de la marca.
+
+00:00:36.000 --> 00:00:56.000
+Se crea una nueva campaña definiendo objetivos, tono de voz, directivas para la IA y seleccionando las redes sociales de Meta a conectar.
+
+00:00:57.000 --> 00:02:05.000
+La plataforma genera propuestas de publicación estructuradas. El usuario puede revisar, ajustar las horas o editar el contenido antes de aprobarlo.
+
+00:02:06.000 --> 00:02:18.000
+Se obtiene la vista previa final de la publicación con su texto e imágenes listas para ser enviadas.
+
+00:02:19.000 --> 00:02:26.000
+Al hacer clic en publicar, la aplicación utiliza la API de Meta para enviar el contenido en tiempo real.
+
+00:02:27.000 --> 00:02:37.000
+Finalmente, se comprueba en la red social que la publicación se realizó con éxito de forma automática.

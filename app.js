@@ -23,6 +23,15 @@
     return path.split('.').reduce((acc, part) => (acc && acc[part] !== undefined ? acc[part] : null), obj);
   }
 
+  function updateBetaDemoLanguage(lang) {
+    const videoLanguage = lang === 'en' ? 'en' : 'es';
+    document.querySelectorAll('[data-beta-demo]').forEach((video) => {
+      const isActive = video.getAttribute('data-beta-demo') === videoLanguage;
+      video.hidden = !isActive;
+      if (!isActive) video.pause();
+    });
+  }
+
   /**
    * Apply selected language to all DOM elements with data-i18n attributes
    */
@@ -106,6 +115,8 @@
         opt.classList.remove('active');
       }
     });
+
+    updateBetaDemoLanguage(lang);
 
     // 6. Sync URL query parameter (?lang=...) without page reload (safe for file:// origins)
     if (updateUrl && window.location.protocol !== 'file:' && window.history && window.history.replaceState) {
@@ -446,12 +457,25 @@
     window.dataLayer = window.dataLayer || [];
     const track = (event, details = {}) => window.dataLayer.push({ event, ...attribution, ...details });
     track('landing_view');
+    const betaDetails = document.getElementById('beta-testers-details');
+    if (betaDetails) {
+      betaDetails.addEventListener('toggle', () => {
+        if (betaDetails.open) track('beta_instructions_open');
+      });
+    }
     document.addEventListener('click', (event) => {
       const target = event.target instanceof Element ? event.target.closest('a, button') : null;
       if (!target) return;
       if (target.id === 'heroCtaPrimary') track('hero_cta_click');
       if (target.id === 'heroCtaSecondary') track('how_it_works_click');
-      if (target.id === 'btnDownloadGooglePlay') track('download_google_play_click');
+      if (target.matches('.beta-hero-link, .beta-open-link, [href="#beta-testers-details"]')) {
+        const details = document.getElementById('beta-testers-details');
+        if (details) details.open = true;
+        track('beta_hero_cta_click');
+      }
+      if (target.id === 'btnBetaEntry') track('beta_entry_click');
+      if (target.id === 'btnBetaGroup') track('beta_group_join_click');
+      if (target.id === 'btnBetaOptIn') track('beta_opt_in_click');
       if (target.id === 'btnContactSupport') track('contact_support_click');
       if (target.matches('.pricing-card a, #pricingCompareContent a')) {
         const plan = target.closest('.pricing-card')?.querySelector('.pricing-header h3')?.textContent.trim()
